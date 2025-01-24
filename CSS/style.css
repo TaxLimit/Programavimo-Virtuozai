@@ -5,3 +5,85 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Fonts / Text Specifications and Coloring */
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../Fonts/Livvic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../Fonts/Livvic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.WhiteText {
+  color: #fff;
+}
+
+.LightCoralHighlight {
+  color: #f67e7e;
+}
+
+.Section1H1 {
+  font-family: "Livvic";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.Section1Paragraph {
+  font-family: Livvic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+/* Text Padding / Sizing */
+
+.S1H1Sizing {
+  width: 635px;
+}
+
+.S1ParagraphSizing {
+  width: 445px;
+}
+
+/* Section Sizing / Tweaks / Coloring */
+
+.Section1 {
+  width: 1440px;
+  height: 450px;
+  background-color: #014e56;
+}
+
+.S1Container {
+  display: flex;
+  width: 445px;
+  height: 195px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 79px;
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+
+.rectangle {
+  background-color: #79c8c7;
+  width: 50px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}

@@ -28,6 +28,9 @@
 
 .LightCoralHighlight {
   color: #f67e7e;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 .Section1H1 {
@@ -36,6 +39,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100px;
+  margin-left: 0;
+  position: relative;
 }
 
 .Section1Paragraph {
@@ -50,6 +55,7 @@
 
 .S1H1Sizing {
   width: 635px;
+  margin-left: 65px;
 }
 
 .S1ParagraphSizing {
@@ -58,10 +64,23 @@
 
 /* Section Sizing / Tweaks / Coloring */
 
+/* Section 1 */
+
 .Section1 {
   width: 1440px;
   height: 450px;
   background-color: #014e56;
+  position: relative;
+}
+
+.S1LeftDesign {
+  margin-left: -100px;
+}
+
+.S1BottomRightDesign {
+  position: absolute;
+  bottom: -3px;
+  right: 165px;
 }
 
 .S1Container {
@@ -87,3 +106,5 @@
   display: flex;
   align-items: center;
 }
+
+/* Section 2 */

@@ -139,6 +139,12 @@
   opacity: 1;
 }
 
+.button:hover {
+  background-color: #012f34;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .button-container {
   position: absolute;
   top: 76px;

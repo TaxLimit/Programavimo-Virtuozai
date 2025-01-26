@@ -11,7 +11,20 @@
     <!-- Header dimensions:
      Width: 1440px
      Height: 250px -->
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <img src="IMG/myteam 2.png" alt="Logo" class="logo" />
+        <a href="index.html"
+          ><button class="nav-button home-button">home</button></a
+        >
+        <a href="Pages/About.html"
+          ><button class="nav-button about-button">about</button></a
+        >
+        <a href="Pages/Contact.html"
+          ><button class="nav-button contact-button">contact us</button></a
+        >
+      </nav>
+    </header>
     <!-- Body Section 1 Dimensions:
      Width: 1440px
      Height: 450px
@@ -20,14 +33,21 @@
      bg-pattern-home-2.svg
     -->
     <section class="Section1">
-      <div>
-        <!-- Left Side Design-->
-      </div>
+      <!-- Flex Container -->
       <div class="flex-container">
+        <!-- Left Side Design -->
+        <div class="S1LeftDesign">
+          <img
+            src="IMG/bg-pattern-home-1.svg"
+            alt="Background Pattern Left Side"
+          />
+        </div>
+        <!-- Big Text -->
         <h1 class="Section1H1 S1H1Sizing WhiteText">
-          Find the best
-          <span class="Section1H1 LightCoralHighlight">talent</span>
+          Find the <br />
+          best <span class="Section1H1 LightCoralHighlight">talent</span>
         </h1>
+        <!-- Special rectangle design and Text Container -->
         <div class="S1Container">
           <div class="rectangle"></div>
           <p class="Section1Paragraph S1ParagraphSizing WhiteText">
@@ -37,8 +57,12 @@
           </p>
         </div>
       </div>
-      <div>
-        <!-- Bottom Right Design -->
+      <!-- Bottom Right Side Design -->
+      <div class="S1BottomRightDesign">
+        <img
+          src="IMG/bg-pattern-home-2.svg"
+          alt="Background Pattern Right Side"
+        />
       </div>
     </section>
     <section></section>
@@ -57,6 +81,33 @@
     </div>
     </article>
     <footer>
+    <article></article>
+    <footer class="footer">
+      <div class="footer-container">
+        <img src="IMG/myteam 2.png" alt="MyTeam Logo" class="footer-logo" />
+        <div class="footer-nav-buttons">
+          <a href="index.html"
+            ><button class="footer-nav-button">home</button></a
+          >
+          <a href="Pages/About.html"
+            ><button class="footer-nav-button footer-nav-about">
+              about
+            </button></a
+          >
+        </div>
+        <div class="footer-contact">
+          987 Hillcrest Lane<br />
+          Irvine, CA<br />
+          California 92714<br />
+          Call Us : 949-833-7432
+        </div>
+        <img
+          src="IMG/Group 31.png"
+          alt="Social Networks"
+          class="footer-social-network"
+        />
+        <div class="footer-copyright">Copyright 2020. All Rights Reserved</div>
+      </div>
     </footer>
   </body>
 </html>

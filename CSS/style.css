@@ -28,6 +28,9 @@
 
 .LightCoralHighlight {
   color: #f67e7e;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 .Section1H1 {
@@ -36,6 +39,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100px;
+  margin-left: 0;
+  position: relative;
 }
 
 .Section1Paragraph {
@@ -50,6 +55,7 @@
 
 .S1H1Sizing {
   width: 635px;
+  margin-left: 65px;
 }
 
 .S1ParagraphSizing {
@@ -57,36 +63,6 @@
 }
 
 /* Section Sizing / Tweaks / Coloring */
-
-.Section1 {
-  width: 1440px;
-  height: 450px;
-  background-color: #014e56;
-}
-
-.S1Container {
-  display: flex;
-  width: 445px;
-  height: 195px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 79px;
-  flex-shrink: 0;
-  margin-left: 30px;
-}
-
-.rectangle {
-  background-color: #79c8c7;
-  width: 50px;
-  height: 4px;
-  flex-shrink: 0;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-}
 
 /* Navigation on the TOP */
 
@@ -161,4 +137,47 @@
 
 .contact-button:hover {
   background-color: rgba(255, 255, 255, 0.1); /* Fono spalva rašant */
+}
+
+/* Section 1 */
+
+.Section1 {
+  width: 1440px;
+  height: 450px;
+  background-color: #014e56;
+  position: relative;
+}
+
+.S1LeftDesign {
+  margin-left: -100px;
+}
+
+.S1BottomRightDesign {
+  position: absolute;
+  bottom: -3px;
+  right: 165px;
+}
+
+.S1Container {
+  display: flex;
+  width: 445px;
+  height: 195px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 79px;
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+
+.rectangle {
+  background-color: #79c8c7;
+  width: 50px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
 }

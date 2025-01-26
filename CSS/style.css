@@ -375,3 +375,43 @@
 }
 
 /* Section 2 */
+
+
+
+
+/* ABOUT.HTML */
+
+.About-Page .S1H1Sizing {
+  font-family: "Livvic";
+  width: 350px;
+  height: 100px;
+  margin-left: 165px;
+  font-size: 64px;
+  line-height: 56px;
+}
+.About-Page .S1ParagraphSizing {
+  width: 730px;
+} 
+
+.About-Page .S1Container{
+  width: 730px;
+  height: 156px;
+  gap: 44px;
+  margin-left: 50px;
+}
+.About-Page .S1BottomRightDesign {
+  position: absolute;
+  bottom: -4px;
+  right: -100px;
+  width: auto;
+  height: auto;
+}
+.About-Page .Section1{
+  height: 267px;
+  overflow: hidden;
+}
+
+.About-Page .rectangle{
+  background-color: #F67E7E;
+}
+

@@ -87,3 +87,75 @@
   display: flex;
   align-items: center;
 }
+
+.article {
+  margin: 0;
+  padding: 0;
+  font-family: "Livvic", sans-serif;
+}
+
+.mask {
+  width: 1440px;
+  height: 200px;
+  background-color: #f67e7e;
+  position: relative;
+  margin: 2129px auto 0;
+}
+
+.content {
+  position: absolute;
+  top: 76px;
+  left: 263px;
+  right: 673px;
+  color: #012f34;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  font-family: "Livvic";
+  src: url("../Fonts/Livvic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.button {
+  display: inline-block;
+  width: 153px;
+  height: 48px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Livvic";
+  src: url("../Fonts/Livvic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 24px 24px 24px 24px;
+  border: 2px solid #012f34;
+  color: #012f34;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.button-container {
+  position: absolute;
+  top: 76px;
+  bottom: 76px;
+  left: 1027px;
+  right: 260px;
+}
+
+.image-container {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 200px;
+  height: 244px;
+}
+
+.image-container img {
+  position: relative;
+  height: auto;
+}

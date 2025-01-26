@@ -75,7 +75,7 @@
   width: 100%; /* Užpildyti pilną ekrano plotį */
   background: #014e56;
   width: 1440px;
-  height: 250px; 
+  height: 250px;
 }
 .logo {
   width: 160px;
@@ -103,6 +103,12 @@
   font-weight: 600;
   line-height: 28px;
 }
+
+.home-button:hover {
+  color: #f67e7e;
+  cursor: pointer;
+}
+
 .about-button {
   position: absolute;
   top: 83px;
@@ -113,6 +119,12 @@
   font-weight: 600;
   line-height: 28px;
 }
+
+.about-button:hover {
+  color: #f67e7e;
+  cursor: pointer;
+}
+
 .contact-button {
   width: 153px; /* Išorės apvado plotis */
   height: 48px; /* Išorės apvado aukštis */
@@ -136,99 +148,9 @@
 }
 
 .contact-button:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Fono spalva rašant */
+  background-color: #fff; /* Fono spalva rašant */
+  color: #002529;
 }
-
-/*footer */
-
-
-
-.footer {
-    width: 1440px; /* Bendras skilties plotis */
-    height: 196px; /* Bendras skilties aukštis */
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #002529; /* Fono spalva */
-}
-
-.footer-container {
-    width: 1110px; /* Konteinerio nr-2 plotis */
-    height: 100px; /* Konteinerio nr-2 aukštis */
-    flex-shrink: 0;
-    position: relative;
-}
-
-.footer-logo {
-    width: 160px; /* Logotipo plotis */
-    height: 40px; /* Logotipo aukštis */
-    flex-shrink: 0;
-    position: absolute;
-   
-    
-}
-
-.footer-nav-buttons {
-    display: flex;
-    position: absolute;
-    left: 0px;
-    bottom: 0px; /* Atstumas nuo apačios */
-}
-
-.footer-nav-button {
-    background: none; /* Pašalina mygtuko foną */
-    border: none; /* Pašalina mygtuko kontūrą */
-    color: #FFF;
-    font-family: Livvic;
-    font-size: 18px; 
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    margin-right: 40px; /* Tarpas tarp mygtukų */
-
-}
-
-.footer-contact {
-    width: 445px;
-    color: #FFF;
-    font-family: Livvic;
-    font-size: 15px; 
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
-    opacity: 0.6;
-    text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.footer-social-network {
-    width: 104px; /* Socialinių tinklų logotipo plotis */
-    height: 24px; /* Socialinių tinklų logotipo aukštis */
-    flex-shrink: 0;
-    position: absolute;
-    top: 0px;
-    right: 0px; /* Atstumas nuo dešinės krašto */
-}
-
-.footer-copyright {
-    width: 255px; /* Užrašo "Copyright" plotis */
-    color: #FFF;
-    text-align: right;
-    font-family: Livvic;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
-    opacity: 0.6;
-    position: absolute;
-    right: 0px; /* Atstumas nuo dešinės krašto */
-    bottom: 0px; /* Atstumas nuo apačios */
-}
-
 
 /* Section 1 */
 
@@ -245,7 +167,7 @@
 
 .S1BottomRightDesign {
   position: absolute;
-  bottom: -3px;
+  bottom: -4px;
   right: 165px;
 }
 
@@ -272,3 +194,104 @@
   display: flex;
   align-items: center;
 }
+
+/*footer */
+
+.footer {
+  width: 1440px; /* Bendras skilties plotis */
+  height: 196px; /* Bendras skilties aukštis */
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #002529; /* Fono spalva */
+}
+
+.footer-container {
+  width: 1110px; /* Konteinerio nr-2 plotis */
+  height: 100px; /* Konteinerio nr-2 aukštis */
+  flex-shrink: 0;
+  position: relative;
+}
+
+.footer-logo {
+  width: 160px; /* Logotipo plotis */
+  height: 40px; /* Logotipo aukštis */
+  flex-shrink: 0;
+  position: absolute;
+}
+
+.footer-nav-buttons {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  bottom: 0px; /* Atstumas nuo apačios */
+}
+
+.footer-nav-button:hover {
+  color: #f67e7e;
+  cursor: pointer;
+}
+
+.footer-nav-button {
+  background: none; /* Pašalina mygtuko foną */
+  border: none; /* Pašalina mygtuko kontūrą */
+  color: #fff;
+  font-family: Livvic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.footer-nav-button:hover {
+  color: #f67e7e;
+  cursor: pointer;
+}
+
+.footer-nav-about {
+  position: absolute;
+  left: 89px;
+}
+
+.footer-contact {
+  width: 445px;
+  color: #fff;
+  font-family: Livvic;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  opacity: 0.6;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-social-network {
+  width: 104px; /* Socialinių tinklų logotipo plotis */
+  height: 24px; /* Socialinių tinklų logotipo aukštis */
+  flex-shrink: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px; /* Atstumas nuo dešinės krašto */
+}
+
+.footer-copyright {
+  width: 255px; /* Užrašo "Copyright" plotis */
+  color: #fff;
+  text-align: right;
+  font-family: Livvic;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  opacity: 0.6;
+  position: absolute;
+  right: 0px; /* Atstumas nuo dešinės krašto */
+  bottom: 0px; /* Atstumas nuo apačios */
+}
+
+/* Section 2 */

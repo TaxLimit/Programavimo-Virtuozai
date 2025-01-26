@@ -64,6 +64,81 @@
 
 /* Section Sizing / Tweaks / Coloring */
 
+/* Navigation on the TOP */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  width: 100%; /* Užpildyti pilną ekrano plotį */
+  background: #014e56;
+  width: 1440px;
+  height: 250px; 
+}
+.logo {
+  width: 160px;
+  height: 40px;
+  top: 77px;
+  position: absolute;
+  left: 165px;
+}
+.nav-button {
+  margin: 0 20px;
+  position: relative;
+  background: none; /* Pašalina mygtuko foną */
+  border: none; /* Pašalina mygtuko kontūrą */
+  color: white; /* Nustato teksto spalvą kaip baltą */
+  font-size: 16px; /* Pritaiko teksto dydį */
+}
+.home-button {
+  position: absolute;
+  top: 83px;
+  left: 405px;
+  color: #fff;
+  font-family: Livvic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.about-button {
+  position: absolute;
+  top: 83px;
+  left: 485px; /* home-button left (+40px) */
+  font-family: Livvic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.contact-button {
+  width: 153px; /* Išorės apvado plotis */
+  height: 48px; /* Išorės apvado aukštis */
+  top: 73px;
+  flex-shrink: 0; /* Išorės savybės */
+  border: 2px solid #fff; /* Apvado spalva */
+  border-radius: 24px; /* Suapvalinti kampai */
+  background: none; /* Pašalina mygtuko foną */
+  padding: 10px; /* Vidaus turinys */
+  color: #fff; /* Teksto spalva */
+  font-family: Livvic; /* Šriftas */
+  font-size: 18px; /* Šrifto dydis */
+  font-style: normal; /* Šrifto stilius */
+  font-weight: 600; /* Šrifto svoris */
+  line-height: 28px; /* Linijos aukštis */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); /* Pridėtas šešėlis */
+  outline: none; /* Pašalina išorinį apvadą fokusuojant */
+  cursor: pointer; /* Rodyklės forma nusikeliant */
+  position: absolute; /* Absoliutus pozicionavimas */
+  right: 198px; /* Atstumas nuo dešinės krašto */
+}
+
+.contact-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fono spalva rašant */
+}
+
 /* Section 1 */
 
 .Section1 {
@@ -106,5 +181,3 @@
   display: flex;
   align-items: center;
 }
-
-/* Section 2 */

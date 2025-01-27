@@ -195,6 +195,129 @@
   align-items: center;
 }
 
+/* Desktop Body Section 3 start */
+.section-3 {
+  width: 1440px;
+  height: 745px;
+  position: relative;
+  background: #004047;
+}
+
+.flex-container_section-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-3-heading {
+  width: 932px;
+  height: 96px;
+  margin-top: 140px;
+  margin-right: 254px;
+  margin-left: 254px;
+  color: #FFF;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+}
+
+.highlight-success-stories {
+color: #79C8C7;
+font-family: Livvic;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+}
+
+.testimonials-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1110px;
+  height: 313px;
+  padding-top: 56px;
+  margin-left: 165px;
+  margin-right: 165px;
+
+
+}
+
+.testimonial-card {
+  width: 350px;
+  margin-top: 36px;
+  position: relative;
+}
+
+.testimonial-text {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 166.667% */
+}
+
+.testimonial-author {
+  margin-top: 24px;
+}
+
+.testimonial-author-name {
+  color: #79C8C7;
+text-align: center;
+font-family: Livvic;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 155.556% */
+}
+
+.testimonial-author-credentials {
+  color: #FFF;
+text-align: center;
+font-family: Livvic;
+font-size: 13px;
+font-style: italic;
+font-weight: 500;
+line-height: 18px; /* 138.462% */
+}
+
+.testimonial-img {
+  margin: 32px 144px 0px;
+  width: 62px;
+  height: 62px;
+  border-radius: 62px;
+  border: 2px solid #C4FFFE;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.bg-pattern-home-5 {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0; 
+}
+
+.bg-pattern-home-4 {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.quotes-icon {
+  position: absolute;
+  left: 142px;
+  top: -36px;
+}
+
+/* Desktop Body Section 3 end */
+
 /* Article */
 
 .article {

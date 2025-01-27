@@ -674,3 +674,137 @@ body {
 .About-Page .rectangle {
   background-color: #f67e7e;
 }
+
+/* Contact-page */
+.ContactSection1 {
+  width: 1440px;
+  background-color: #014e56;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 548px;
+}
+
+.ContactS1Container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  
+}
+
+.S1Container-left {
+  flex: 1;
+  
+}
+
+.ContactS1H1 {
+  font-family: "Livvic";
+  font-size: 64px;
+  line-height: 100px;
+  width: 350px;
+  position: relative;
+}
+
+.S1H3Small {
+  font-family: "Livvic";
+  font-size: 32px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 48px;
+  margin-left: 0;
+}
+
+.S1Container-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.S1Container-left ul li {
+  font-family: "Livvic";
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-style: bold;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 28px; 
+}
+
+.S1Container-left ul li img {
+  width: 72px;
+  height: 72px;
+  margin-right: 20px;
+}
+
+/*Img kaireje */ 
+.S1ContactLeftimg {
+  position: relative;
+  top: 4px;
+  left: -101px;
+  width: 200px;
+  height: 225px;
+  clip-path: inset(0 0 0 50%);
+}
+
+/* Img desineje apacioje */
+.S1ContactRightimg {
+  position: relative;
+  bottom: -320px;
+  right: -101px;
+  width: 200px;
+  height: 225px;
+  clip-path: inset(0 50% 0 0);
+} 
+/* Formos containeris */
+.S1FormContainer {
+  font-family: "Livvic";
+  width: 100%;
+  max-width: 540px;
+  flex: 1;
+  
+}
+
+.form-group {
+  margin-bottom: 10px;
+  
+} 
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  color: #ffffff50;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 540px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ffffff50;
+  color: #ffffff;
+  background: transparent;
+  outline: none;
+  resize: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  color: #ffffff;
+  border-bottom: 1px solid #79C8C7;
+}
+
+.form-group button {
+  width: 123px; /* Consistent button size */
+  height: 48px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #034b5e;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 2px;
+  margin-top: 10px;
+}

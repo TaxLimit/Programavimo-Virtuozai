@@ -196,15 +196,16 @@
 }
 
 /* Desktop Body Section 3 start */
-.flex-container_section-3 {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-3 {
   width: 1440px;
   height: 745px;
+  position: relative;
   background: #004047;
+}
+
+.flex-container_section-3 {
+  display: flex;
+  flex-direction: column;
 }
 
 .section-3-heading {
@@ -220,8 +221,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 48px; /* 100% */
-
-
 }
 
 .highlight-success-stories {
@@ -242,7 +241,7 @@ line-height: 48px;
   padding-top: 56px;
   margin-left: 165px;
   margin-right: 165px;
-  margin-bottom: 140px;
+
 
 }
 
@@ -294,6 +293,14 @@ line-height: 18px; /* 138.462% */
   border-radius: 62px;
   border: 2px solid #C4FFFE;
   background: lightgray 50% / cover no-repeat;
+}
+
+.bg-pattern-home-5 {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0; 
 }
 
 /* Desktop Body Section 3 end */

@@ -145,6 +145,14 @@
   cursor: pointer; /* Rodyklės forma nusikeliant */
   position: absolute; /* Absoliutus pozicionavimas */
   right: 198px; /* Atstumas nuo dešinės krašto */
+  display: flex; /* Naudoja Flexbox */
+  justify-content: center; /* Horizontalus išcentravimas */
+  align-items: center; /* Vertikalus išcentravimas */
+}
+
+.social-icon:hover {
+  fill: #f67e7e;
+  cursor: pointer;
 }
 
 .contact-button:hover {
@@ -324,9 +332,22 @@
   line-height: 28px;
 }
 
-.footer-nav-button:hover {
-  color: #f67e7e;
+.footer-social-networks {
+  display: flex;
+  gap: 15px; /* Tarpas tarp ikonėlių */
+  justify-content: center; /* Centruoja ikonėles konteineryje */
+  align-items: center; /* Vertikalus suderinimas */
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
   cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #f67e7e; /* Spalva užvedus pelę */
 }
 
 .footer-nav-about {
@@ -350,13 +371,20 @@
   transform: translate(-50%, -50%);
 }
 
-.footer-social-network {
-  width: 104px; /* Socialinių tinklų logotipo plotis */
+.footer-social-networks {
+  width: 104px; /* Socialinių tinklų bendras plotis */
   height: 24px; /* Socialinių tinklų logotipo aukštis */
+  display: flex;
   flex-shrink: 0;
   position: absolute;
+  gap: 15px;
   top: 0px;
-  right: 0px; /* Atstumas nuo dešinės krašto */
+  right: 0px;
+}
+
+.footer-social-networks:hover {
+  color: #f67e7e;
+  cursor: pointer;
 }
 
 .footer-copyright {
@@ -376,9 +404,6 @@
 
 /* Section 2 */
 
-
-
-
 /* ABOUT.HTML */
 
 .About-Page .S1H1Sizing {
@@ -391,9 +416,9 @@
 }
 .About-Page .S1ParagraphSizing {
   width: 730px;
-} 
+}
 
-.About-Page .S1Container{
+.About-Page .S1Container {
   width: 730px;
   height: 156px;
   gap: 44px;
@@ -406,12 +431,11 @@
   width: auto;
   height: auto;
 }
-.About-Page .Section1{
+.About-Page .Section1 {
   height: 267px;
   overflow: hidden;
 }
 
-.About-Page .rectangle{
-  background-color: #F67E7E;
+.About-Page .rectangle {
+  background-color: #f67e7e;
 }
-

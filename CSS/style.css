@@ -258,7 +258,34 @@ line-height: 48px;
   line-height: 25px; /* 166.667% */
 }
 
+.testimonail-1 .testimonail-2 .testimonail-3 {
+  display: flex;
+  flex-direction: column;
+}
 
+.testimonial-author {
+  margin-top: 24px;
+}
+
+.testimonial-author-name {
+  color: #79C8C7;
+text-align: center;
+font-family: Livvic;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 155.556% */
+}
+
+.testimonial-author-credentials {
+  color: #FFF;
+text-align: center;
+font-family: Livvic;
+font-size: 13px;
+font-style: italic;
+font-weight: 500;
+line-height: 18px; /* 138.462% */
+}
 
 /* Desktop Body Section 3 end */
 

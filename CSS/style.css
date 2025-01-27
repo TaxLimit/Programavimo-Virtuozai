@@ -198,6 +198,7 @@
 /* Desktop Body Section 3 start */
 .flex-container_section-3 {
   display: flex;
+  flex-direction: column;
 }
 
 .section-3 {
@@ -206,7 +207,7 @@
   background: #004047;
 }
 
-.section-3-header {
+.section-3-heading {
   width: 932px;
   height: 96px;
   margin-top: 140px;
@@ -231,6 +232,33 @@ font-style: normal;
 font-weight: 700;
 line-height: 48px;
 }
+
+.testimonials-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1110px;
+  height: 313px;
+  padding-top: 56px;
+  margin-left: 165px;
+  margin-right: 165px;
+  margin-bottom: 140px;
+
+}
+
+.testimonial {
+  width: 350px;
+  margin-top: 36px;
+  color: #FFF;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 166.667% */
+}
+
+
 
 /* Desktop Body Section 3 end */
 

@@ -245,9 +245,15 @@ line-height: 48px;
 
 }
 
-.testimonial {
+.testimonial-card {
   width: 350px;
   margin-top: 36px;
+  position: relative;
+}
+
+.testimonial-text {
+  position: relative;
+  z-index: 1;
   color: #FFF;
   text-align: center;
   font-family: Livvic;
@@ -255,11 +261,6 @@ line-height: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 25px; /* 166.667% */
-}
-
-.testimonial-1 .testimonial-2 .testimonial-3 {
-  display: flex;
-  flex-direction: column;
 }
 
 .testimonial-author {
@@ -287,7 +288,7 @@ line-height: 18px; /* 138.462% */
 }
 
 .testimonial-img {
-  margin-top: 32px;
+  margin: 32px 144px 0px;
   width: 62px;
   height: 62px;
   border-radius: 62px;
@@ -307,6 +308,12 @@ line-height: 18px; /* 138.462% */
   position: absolute;
   top: 0;
   left: 0; 
+}
+
+.quotes-icon {
+  position: absolute;
+  left: 142px;
+  top: -36px;
 }
 
 /* Desktop Body Section 3 end */

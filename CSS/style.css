@@ -118,11 +118,11 @@
   height: 48px; /* Išorės apvado aukštis */
   top: 73px;
   flex-shrink: 0; /* Išorės savybės */
-  border: 2px solid #fff; /* Apvado spalva */
+  border: 2px solid #FFF; /* Apvado spalva */
   border-radius: 24px; /* Suapvalinti kampai */
   background: none; /* Pašalina mygtuko foną */
   padding: 10px; /* Vidaus turinys */
-  color: #fff; /* Teksto spalva */
+  color: #FFF; /* Teksto spalva */
   font-family: Livvic; /* Šriftas */
   font-size: 18px; /* Šrifto dydis */
   font-style: normal; /* Šrifto stilius */
@@ -133,7 +133,11 @@
   cursor: pointer; /* Rodyklės forma nusikeliant */
   position: absolute; /* Absoliutus pozicionavimas */
   right: 198px; /* Atstumas nuo dešinės krašto */
+  display: flex; /* Naudoja Flexbox */
+  justify-content: center; /* Horizontalus išcentravimas */
+  align-items: center; /* Vertikalus išcentravimas */
 }
+
 
 .contact-button:hover {
   background-color: rgba(255, 255, 255, 0.1); /* Fono spalva rašant */
@@ -205,14 +209,23 @@
     transform: translate(-50%, -50%);
 }
 
-.footer-social-network {
-    width: 104px; /* Socialinių tinklų logotipo plotis */
+.footer-social-networks {
+    width: 104px; /* Socialinių tinklų bendras plotis */
     height: 24px; /* Socialinių tinklų logotipo aukštis */
+    display: flex;
     flex-shrink: 0;
     position: absolute;
+    gap: 15px;
     top: 0px;
-    right: 0px; /* Atstumas nuo dešinės krašto */
+    right: 0px; 
+    
 }
+
+.footer-social-networks:hover {
+  color: #f67e7e;
+  cursor: pointer;
+}
+
 
 .footer-copyright {
     width: 255px; /* Užrašo "Copyright" plotis */

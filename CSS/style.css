@@ -195,6 +195,45 @@
   align-items: center;
 }
 
+/* Desktop Body Section 3 start */
+.flex-container_section-3 {
+  display: flex;
+}
+
+.section-3 {
+  width: 1440px;
+  height: 745px;
+  background: #004047;
+}
+
+.section-3-header {
+  width: 932px;
+  height: 96px;
+  margin-top: 140px;
+  margin-right: 254px;
+  margin-left: 254px;
+  color: #FFF;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+
+
+}
+
+.highlight-success-stories {
+color: #79C8C7;
+font-family: Livvic;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+}
+
+/* Desktop Body Section 3 end */
+
 /* Article */
 
 .article {

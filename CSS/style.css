@@ -258,7 +258,7 @@ line-height: 48px;
   line-height: 25px; /* 166.667% */
 }
 
-.testimonail-1 .testimonail-2 .testimonail-3 {
+.testimonial-1 .testimonial-2 .testimonial-3 {
   display: flex;
   flex-direction: column;
 }
@@ -285,6 +285,15 @@ font-size: 13px;
 font-style: italic;
 font-weight: 500;
 line-height: 18px; /* 138.462% */
+}
+
+.testimonial-img {
+  margin-top: 32px;
+  width: 62px;
+  height: 62px;
+  border-radius: 62px;
+  border: 2px solid #C4FFFE;
+  background: lightgray 50% / cover no-repeat;
 }
 
 /* Desktop Body Section 3 end */

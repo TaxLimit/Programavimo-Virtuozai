@@ -303,6 +303,12 @@ line-height: 18px; /* 138.462% */
   bottom: 0; 
 }
 
+.bg-pattern-home-4 {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
 /* Desktop Body Section 3 end */
 
 /* Article */

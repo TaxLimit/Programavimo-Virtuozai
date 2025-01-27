@@ -203,6 +203,17 @@
   align-items: center;
 }
 
+/* Section 2 */
+
+.Section2{
+  width: 1440px;
+  height: 684px;
+  background-color: #012F34;
+  position: relative;
+}
+
+
+
 /* Desktop Body Section 3 start */
 .section-3 {
   width: 1440px;

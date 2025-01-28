@@ -7,7 +7,6 @@
 }
 
 body {
-  width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -673,4 +672,77 @@ body {
 
 .About-Page .rectangle {
   background-color: #f67e7e;
+}
+
+/* Media Queries */
+
+/* 
+Mobile 375px,
+Tablet 768px,
+Desktop 1440px.
+*/
+
+@media (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+/* Tablet  */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .Section1 {
+    width: 100%;
+  }
+  .S1Container {
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .S1ParagraphSizing {
+    width: 100%;
+  }
+  .Section2 {
+    width: 100%;
+  }
+  .section2Container {
+    width: 100%;
+  }
+  .section-3 {
+    width: 100%;
+  }
+  .section-3-heading {
+    width: 100%;
+    margin-left: 0;
+  }
+  .testimonials-box {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .testimonial-author {
+    margin-top: 0px;
+  }
+  .article {
+    width: 100%;
+  }
+  .button-container {
+    left: 0px;
+  }
+  .mask {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    height: 200px;
+  }
+  .footer-container {
+    width: 100%;
+  }
+}
+/* Mobile */
+@media (max-width: 375px) {
 }

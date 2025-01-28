@@ -658,6 +658,7 @@ body {
   height: 156px;
   gap: 44px;
   margin-left: 50px;
+  margin-top: 3px;
 }
 .About-Page .S1BottomRightDesign {
   position: absolute;
@@ -673,4 +674,51 @@ body {
 
 .About-Page .rectangle {
   background-color: #f67e7e;
+}
+
+/* Our Client Bar */
+.About-Page .Our-Clients {
+  width: 1440px;
+  height: 437px;
+  background-color: #012F34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+.About-Page .section-title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.About-Page .section-title {
+  color: #fff;
+  font-family: "Livvic";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.About-Page .client-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  width: 1110px;
+  height: 25px;
+}
+
+.About-Page .client-logo {
+  height: 100%;
+  width: auto;
+}
+
+.About-Page .decorative-img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

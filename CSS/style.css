@@ -680,7 +680,7 @@ body {
 .About-Page .Our-Clients {
   width: 1440px;
   height: 437px;
-  background-color: #012F34;
+  background-color: #012f34;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -721,7 +721,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-
+}
 /* Media Queries */
 
 /* 
@@ -790,8 +790,10 @@ Desktop 1440px.
   .footer-container {
     width: 100%;
   }
+  .About-Page .Our-Clients {
+    width: 100%;
+  }
+  .About-Page .client-logos-container {
+    width: 100%;
+  }
 }
-/* Mobile */
-@media (max-width: 375px) {
-}
-

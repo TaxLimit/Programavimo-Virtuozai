@@ -674,3 +674,165 @@ body {
 .About-Page .rectangle {
   background-color: #f67e7e;
 }
+/* About-Page_section2 */
+.About-Page_section2 {
+  width: 1440px;
+  height: 1002px;
+  font-family: "Livvic";
+  background-color: #004047;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.About-Page_section2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: url("../IMG/bg-pattern-about-2-contact-1.svg") no-repeat;
+  background-size: contain;
+}
+
+.About-Page_section2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 147px;
+  height: 100px;
+  background: url("../IMG/bg-pattern-home-4-about-3.svg") no-repeat;
+  background-size: contain;
+}
+
+.About-Page_section2 .flex_container_4 {
+  width: 1100px;
+  height: 722px;
+  margin: 140px 165px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .About-Page_section2-heading {
+  font-size: 48px;
+  font-weight: 920px;
+  margin-bottom: 70px;
+}
+
+.About-Page_section2 .grid {
+  width: 1110px;
+  height: 722px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px); 
+  grid-auto-rows: 253px;
+  gap: 30px;
+}
+
+.About-Page_section2 .card1 {
+  background-color: #012F34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+ 
+}
+
+.About-Page_section2 .card2 {
+  background-color: #012F34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  
+}
+
+.About-Page_section2 .card3 {
+  background-color: #012F34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  
+}
+
+.About-Page_section2 .card3 {
+  background-color: #012F34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  
+}
+
+.About-Page_section2 .card4 {
+  background-color: #012F34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  
+}
+
+.About-Page_section2 .card5 {
+  background-color: #012F34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  
+}
+
+.About-Page_section2 .grid img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #C4FFFE;
+}
+
+.About-Page_section2 .grid h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.About-Page_section2 .grid p {
+  font-size: 0.9rem;
+  color: #d0d0d0;
+}
+
+.About-Page_section2 .grid .plus-btn {
+  background-color: #F67E7E;
+  border: none;
+  border-radius: 50%;
+  color: #012F34;
+  font-size: 16px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.About-Page_section2 .card6 {
+  background-color: #002529;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.About-Page_section2 .card6 p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #d0d0d0;
+}
+
+.About-Page_section2 .card6 h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+

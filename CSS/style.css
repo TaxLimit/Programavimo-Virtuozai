@@ -1078,83 +1078,98 @@ Desktop 1440px.
   }
 
   /* Article */
-
   .article {
     width: 100%;
-    height: 200px;
   }
-  .content h1 {
+  .mask {
     position: relative;
-    top: 0;
-    left: 0;
-    right: 335px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .image-container {
+    top: 78px;
+    right: 568px;
+    width: 200px;
+    height: 244px;
+  }
+
+  .content {
     width: 336px;
     height: 32px;
-    color: #012f34;
-    font-family: Livvic;
+    top: 84px;
+    left: 97px;
+    text-align: left;
+  }
+
+  .content h1 {
     font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px; /* 100% */
+    line-height: 32px;
   }
 
   .button-container {
-    left: 0px;
-  }
-  .mask {
-    width: 100%;
-  }
-
-  /* Footer */
-
-  .footer {
-    width: 100%;
-    height: 200px;
-    margin-top: auto;
-  }
-  .footer-container {
-    width: 100%;
+    width: 153px;
+    height: 48px;
+    top: 76px;
+    left: 517px;
   }
 
-  /* ABOUT.HTML */
-
-  /* Section 3 */
-
-  .About-Page .Our-Clients {
-    width: 100%;
-  }
-  .About-Page .client-logos-container {
-    width: 100%;
-  }
-
-  /* CONTACT.HTML */
-
-  /* Section 1 */
-
-  .ContactSection1 {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 1;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Ensure children are stacked vertically */
-  }
-
-  .ContactS1Container {
-    width: 100%; /* Ensure children are stacked vertically */
-    flex-direction: column;
+  .button {
+    width: 153px;
+    height: 48px;
     text-align: center;
   }
+}
 
-  .S1FormContainer {
-    width: 100%;
-  }
-  .S1ContactRightimg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 200px;
+  margin-top: auto;
+}
+.footer-container {
+  width: 100%;
+}
+
+/* ABOUT.HTML */
+
+/* Section 3 */
+
+.About-Page .Our-Clients {
+  width: 100%;
+}
+.About-Page .client-logos-container {
+  width: 100%;
+}
+
+/* CONTACT.HTML */
+
+/* Section 1 */
+
+.ContactSection1 {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensure children are stacked vertically */
+}
+
+.ContactS1Container {
+  width: 100%; /* Ensure children are stacked vertically */
+  flex-direction: column;
+  text-align: center;
+}
+
+.S1FormContainer {
+  width: 100%;
+}
+.S1ContactRightimg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 768px) {

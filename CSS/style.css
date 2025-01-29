@@ -1066,9 +1066,13 @@ Desktop 1440px.
   }
 
   /* Article */
+  .article {
+    width: 100%;
+  }
   .mask {
     position: relative;
     overflow: hidden;
+    width: 100%;
   }
 
   .image-container {
@@ -1104,6 +1108,18 @@ Desktop 1440px.
     text-align: center;
   }
 }
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 200px;
+  margin-top: auto;
+}
+.footer-container {
+  width: 100%;
+}
+
 /* ABOUT.HTML */
 
 /* Section 3 */

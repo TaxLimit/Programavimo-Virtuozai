@@ -79,11 +79,11 @@ body {
   position: relative;
   width: 100%; /* Užpildyti pilną ekrano plotį */
   background: #014e56;
-  width: 1440px;
+  max-width: 1440px;
   height: 250px;
 }
 .logo {
-  width: 160px;
+  max-width: 160px;
   height: 40px;
   top: 77px;
   position: absolute;
@@ -164,6 +164,18 @@ body {
   background-color: #fff; /* Fono spalva rašant */
   color: #002529;
 }
+/* Burger mygtuko stilius */
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Mobile meniu (iš pradžių paslėptas) */
 
 /* Section 1 */
 
@@ -1144,3 +1156,64 @@ Desktop 1440px.
     right: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    /* height: 200px; Sumažiname aukštį */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    left: 39px;
+    top: 72px;
+  }
+
+  .home-button {
+    left: 215px;
+    top: 74px;
+    gap: 40px;
+  }
+
+  .about-button {
+    left: 304px;
+    top: 74px;
+  }
+
+  .contact-button {
+    right: 40px;
+    top: 64px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .logo {
+    top: 48px;
+    left: 24px;
+    width: 128px;
+    height: 32px;
+  }
+
+  .home-button {
+    display: none;
+  }
+
+  .about-button {
+    display: none;
+  }
+
+  .contact-button {
+    display: none;
+  }
+.burger-menu {
+    display: block;
+    top: 41px;
+    right: 24px;
+    
+  }
+}
+
+
+
+

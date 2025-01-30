@@ -1169,18 +1169,20 @@ Desktop 1440px.
 
   .S1ContactLeftimg {
     position: relative;
-    width: 200px;
-    height: 200px;
-    top: 200px;
-    left: -123px;
+    max-width: 200px;
+    max-height: 200px;
+    top: calc(16% - 20px);
+    left: calc(-19% - 10px);
+    clip-path: inset(0 0 0 40%)
   }
 
   .S1ContactRightimg {
     position: relative;
-    width: 200px;
-    height: 200px;
-    bottom: 143px;
-    right: -642px;
+    max-width: 200px;
+    max-height: 200px;
+    clip-path: inset(0 40% 0 0);
+    bottom: calc(3% + 11px);
+    right: calc(-84% - 19px)
   }
 
   .S1FormContainer {

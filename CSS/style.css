@@ -1060,6 +1060,34 @@ Desktop 1440px.
     width: 100%;
   }
 
+  .S2Container {
+    width: 573px;
+    height: 510px;
+    margin: 100px 97px;
+  }
+
+  .TitleInLeft {
+    gap: 36px;
+  }
+
+  .Title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .S2BottomRightDesign {
+    top: 0px;
+  }
+
+  .ListInRight {
+    top: 264px;
+    left: 97px;
+  }
+
+  .Description {
+    width: 478px;
+  }
+
   /* Section 3 */
 
   .section-3 {

@@ -1066,7 +1066,16 @@ Desktop 1440px.
     margin: 100px 97px;
   }
 
+  .TitleInLeft {
+    gap: 36px;
+  }
 
+  .Title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  
 
 
   /* Section 3 */

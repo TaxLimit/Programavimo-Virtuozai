@@ -1079,6 +1079,14 @@ Desktop 1440px.
     top: 0px;
   }
 
+  .ListInRight {
+    top: 264px;
+    left: 97px;
+  }
+
+  .Description {
+    width: 478px;
+  }
 
   /* Section 3 */
 

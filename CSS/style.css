@@ -1242,11 +1242,45 @@ Desktop 1440px.
   .contact-button {
     display: none;
   }
-.burger-menu {
+
+  .burger-menu {
     display: block;
     top: 41px;
     right: 24px;
     
+  }
+
+/* Section 3 */
+
+  .section-3 {
+    height: 1410px;
+  }
+  
+  .flex-container_section-3 {
+    height: 1410px;
+  }
+
+  .section-3-heading {
+    width: 327px;
+    margin-top: 140px;
+    height: auto;
+  }
+
+  .testimonials-box {
+  }
+
+  .testimonial-card {
+    width: 327px;
+  }
+
+
+  .quotes-icon {
+    left: 130px
+  }
+
+  .testimonial-img {
+    margin-left: 133px;
+    margin-right: 134px;
   }
 }
 

@@ -1517,8 +1517,6 @@ Desktop 1440px.
     height: 48px;
     margin-right: 390px;
   }
-}
-=======
 
   /* Footer */
 
@@ -1564,6 +1562,7 @@ Desktop 1440px.
     right: 0;
   }
   .footer-nav-about {
+
   }
 }
 
@@ -1601,11 +1600,13 @@ Desktop 1440px.
   .contact-button {
     display: none;
   }
+
   .burger-menu {
     display: block;
     top: 41px;
     right: 24px;
   }
+
   /* Section 1 */
   .Section1 {
     width: 100%;
@@ -1718,7 +1719,7 @@ Desktop 1440px.
   }
   /* Section 3 */
 
-  .section-3 {
+  /* .section-3 {
     width: 100%;
     min-height: 1410px;
   }
@@ -1728,6 +1729,40 @@ Desktop 1440px.
   .testimonial-card {
     width: 100%;
   }
+ */
+
+ /* Section 3 */
+
+ .section-3 {
+  height: 1410px;
+}
+
+.flex-container_section-3 {
+  height: 1410px;
+}
+
+.section-3-heading {
+  width: 327px;
+  margin-top: 140px;
+  height: auto;
+}
+
+.testimonials-box {
+}
+
+.testimonial-card {
+  width: 327px;
+}
+
+.quotes-icon {
+  left: 130px
+}
+
+.testimonial-img {
+  margin-left: 133px;
+  margin-right: 134px;
+}
+  
   /* Article */
   .article {
     width: 100%;
@@ -1798,22 +1833,16 @@ left: 98px;
 width: 107px;
 height: 25px;
 font-size: 15px;
-gap: 24px;
-
-
- 
+gap: 24px; 
 }
 
 .footer-nav-button{
 position: absolute;
  font-size: 15px;
-
-  
 }
 
 .footer-nav-about{
   left: 75px;
- 
 }
 
 .footer-nav-home{
@@ -1832,24 +1861,17 @@ line-height: 25px;
 opacity: 0.6;
 top: 145px;
 font-family: "Livvic";
-
-
 }
+
 .footer-social-networks {
 top: 240px;
 left: 120px;
 position: absolute;
-
 }
 
-.footer-copyright{
+.footer-copyright {
   display: inline;
   text-align: center;
   left: 45px;
 }
-
-
-
-
-
 }

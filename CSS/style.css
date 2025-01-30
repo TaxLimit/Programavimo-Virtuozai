@@ -1075,7 +1075,9 @@ Desktop 1440px.
     line-height: 32px;
   }
 
-  
+  .S2BottomRightDesign {
+    top: 0px;
+  }
 
 
   /* Section 3 */

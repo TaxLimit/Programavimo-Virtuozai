@@ -1060,7 +1060,13 @@ Desktop 1440px.
     width: 100%;
   }
 
-  
+  .S2Container {
+    width: 573px;
+    height: 510px;
+    margin: 100px 97px;
+  }
+
+
 
 
   /* Section 3 */

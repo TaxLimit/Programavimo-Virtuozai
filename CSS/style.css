@@ -532,7 +532,7 @@ body {
 /*footer */
 
 .footer {
-  width: 1440px; /* Bendras skilties plotis */
+  max-width: 1440px; /* Bendras skilties plotis */
   height: 196px; /* Bendras skilties aukštis */
   flex-shrink: 0;
   display: flex;
@@ -1166,15 +1166,64 @@ Desktop 1440px.
   /* Footer */
 
   .footer {
-    width: 100%;
-    height: 200px;
+    position: relative;
+    max-width: 768;
+    height: 271px;
     margin-top: auto;
   }
-  .footer-container {
+ 
+   .footer-container {
+    display: inline-flex;
     width: 100%;
+    width: 689px;
+    height: 159px;
+    gap: 302px;
+    flex-shrink: 0;
+    align-items: flex-start;
+    
   }
+  
+  .footer-logo {
+    width: 96px;
+    height: 24px;
+    position: absolute; 
+   
+  }
+.footer-nav-buttons {
 
-  /* ABOUT.HTML */
+ position: absolute;
+ left: 0;
+ top: 83px;
+ width: 42px;
+  height: 25px;
+   
+}
+.footer-contact {
+  width: 689px;
+  height: 100px;
+  text-align: right;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  opacity: 0.6;
+  top: 56px;
+  right: 0;
+  
+}
+.footer-nav-about {
+ 
+}
+ 
+.footer-social-networks {
+position: absolute;
+top: 150px;
+left: 0;
+height: 24px;
+width: 102px;
+}
+
+
 
   /* Section 3 */
 

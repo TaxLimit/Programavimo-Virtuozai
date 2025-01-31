@@ -687,6 +687,202 @@ body {
   background-color: #f67e7e;
 }
 
+/* About-Page_section2 */
+
+.About-Page_section2 {
+  width: 1440px;
+  height: 1002px;
+  font-family: "Livvic";
+  background-color: #004047;
+  color: #fff;
+  position: relative;
+}
+/* Img on top left */
+.About-Page_section2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: url("../IMG/bg-pattern-about-2-contact-1.svg") no-repeat;
+  background-size: contain;
+}
+/* Img on bottom right */
+.About-Page_section2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 147px;
+  height: 100px;
+  background: url("../IMG/bg-pattern-home-4-about-3.svg") no-repeat;
+  background-size: contain;
+}
+/* All text and cards */
+.About-Page_section2 .flex_container_4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 165px 165px;
+  text-align: center;
+  position: relative;
+  height: 722px;
+}
+/* heading "Meet the directors" */
+.About-Page_section2 .About-Page_section2-heading {
+  font-size: 48px;
+  font-weight: 920px;
+  padding-top: 140px;
+  margin-bottom: 64px;
+}
+/* all cards */
+.About-Page_section2 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: 253px;
+  gap: 78px 30px;
+}
+
+.About-Page_section2 .card1 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card2 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card3 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card3 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card4 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card5 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card6 {
+  background-color: #002529;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  place-items: center; /* Centruoja ir horizontaliai, ir vertikaliai */
+  text-align: center;
+  height: 100%;
+}
+
+/* Img at cards */
+.About-Page_section2 .grid img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 3px solid #c4fffe;
+}
+
+.About-Page_section2 .grid p {
+  font-size: 15px;
+  color: #ffffff;
+  font-style: italic;
+  line-height: 25px;
+  width: 302px;
+  height: 25px;
+  margin-bottom: 56px;
+}
+.About-Page_section2 .grid h3 {
+  font-size: 18px;
+  color: #79c8c7;
+  font-style: bold;
+  margin-top: 16px;
+  width: 302px;
+  height: 28px;
+}
+.About-Page_section2 .card6 h3 {
+  margin-top: 15px;
+}
+.About-Page_section2 .card6 p {
+  width: 254px;
+  height: 75px;
+  font-size: 15px;
+  color: #ffffff;
+  font-style: normal;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+.About-Page_section2 .card6 div {
+  width: 60px;
+  height: 20px;
+  font-size: 15px;
+  color: #ffffff;
+  font-style: normal;
+  margin-bottom: 35px;
+  margin-top: 0px;
+  display: flex;
+  gap: 16px;
+}
+
+/* + button*/
+.About-Page_section2 .grid .plus-btn {
+  background-color: #f67e7e;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.About-Page_section2 .grid .plus-btn:hover {
+  background-color: #79c8c7;
+}
+/* x button*/
+.card6 .x-btn {
+  background-color: #79c8c7;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.About-Page_section2 .grid .x-btn:hover {
+  background-color: #f67e7e;
+}
+.card6 .x-btn svg {
+  transform: rotate(45deg);
+}
+
 /* Our Clients Article */
 
 .About-Page .Our-Clients {
@@ -1199,8 +1395,8 @@ Desktop 1440px.
     height: 271px;
     margin-top: auto;
   }
- 
-   .footer-container {
+
+  .footer-container {
     display: inline-flex;
     width: 100%;
     width: 689px;
@@ -1208,50 +1404,42 @@ Desktop 1440px.
     gap: 302px;
     flex-shrink: 0;
     align-items: flex-start;
-    
   }
-  
+
   .footer-logo {
     width: 96px;
     height: 24px;
-    position: absolute; 
-   
+    position: absolute;
   }
-.footer-nav-buttons {
+  .footer-nav-buttons {
+    position: absolute;
+    left: 0;
+    top: 83px;
+    width: 42px;
+    height: 25px;
+  }
+  .footer-contact {
+    width: 689px;
+    height: 100px;
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+    top: 56px;
+    right: 0;
+  }
+  .footer-nav-about {
+  }
 
- position: absolute;
- left: 0;
- top: 83px;
- width: 42px;
-  height: 25px;
-   
-}
-.footer-contact {
-  width: 689px;
-  height: 100px;
-  text-align: right;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 25px;
-  opacity: 0.6;
-  top: 56px;
-  right: 0;
-  
-}
-.footer-nav-about {
- 
-}
- 
-.footer-social-networks {
-position: absolute;
-top: 150px;
-left: 0;
-height: 24px;
-width: 102px;
-}
-
-
+  .footer-social-networks {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    height: 24px;
+    width: 102px;
+  }
 
   /* Section 3 */
 

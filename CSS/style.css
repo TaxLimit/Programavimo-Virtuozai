@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Livvic;
 }
 
 body {
@@ -174,8 +175,6 @@ body {
   top: 20px;
   right: 20px;
 }
-
-/* Mobile meniu (iš pradžių paslėptas) */
 
 /* Section 1 */
 
@@ -1481,6 +1480,21 @@ Desktop 1440px.
 }
 
 @media screen and (max-width: 375px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*           INDEX.HTML          */
+  /* Nav */
+  .navbar {
+    width: 100%;
+    height: 160px;
+  }
   .logo {
     top: 48px;
     left: 24px;
@@ -1503,5 +1517,156 @@ Desktop 1440px.
     display: block;
     top: 41px;
     right: 24px;
+  }
+  /* Section 1 */
+  .Section1 {
+    width: 100%;
+    height: 407px;
+    margin-top: auto;
+  }
+
+  .Section1 h1 {
+    width: 327px;
+    position: absolute;
+    top: 0;
+    left: 24px;
+  }
+
+  .S1H1Sizing {
+    margin-left: 0;
+  }
+
+  .Section1H1 {
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+  }
+
+  .Section1 span {
+    color: #f67e7e;
+    font-family: Livvic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .S1Container p {
+    position: absolute;
+    top: 98px;
+    left: 24px;
+    width: 327px;
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 186.667% */
+  }
+
+  .S1LeftDesign {
+    display: none;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .S1Container {
+    width: 100%;
+    flex-shrink: 1;
+    height: 407px;
+    flex-wrap: wrap;
+  }
+  .S1ParagraphSizing {
+    width: 100%;
+  }
+
+  .S1BottomRightDesign {
+    left: 10px;
+    right: 8px;
+    top: 307px;
+  }
+
+  /*  Section 2 */
+
+  .Section2 {
+    width: 100%;
+    min-height: 1073px;
+    margin-top: auto;
+  }
+  .section2Container {
+    width: 100%;
+  }
+  .S2Container {
+    width: 100%;
+    margin: 0;
+  }
+  .ListInRight {
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+  }
+  .Item1 {
+    width: 100%;
+  }
+  .Item2 {
+    width: 100%;
+  }
+  .Item3 {
+    width: 100%;
+  }
+  .Description {
+    flex-shrink: 1;
+  }
+  .testimonial-img {
+    margin: 0;
+  }
+  /* Section 3 */
+
+  .section-3 {
+    width: 100%;
+    min-height: 1410px;
+  }
+  .section-3-heading {
+    width: 100%;
+  }
+  .testimonial-card {
+    width: 100%;
+  }
+  /* Article */
+  .article {
+    width: 100%;
+    height: 302px;
+  }
+  .mask {
+    height: 302px;
+  }
+  .content {
+    width: 100%;
+    left: 0%;
+  }
+  .button-container {
+    width: 100%;
+    left: 0%;
+  }
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: 432px;
+  }
+  .footer-container {
+    width: 100%;
+    height: 432px;
+  }
+  .footer-contact {
+    width: 100%;
+    left: 0;
   }
 }

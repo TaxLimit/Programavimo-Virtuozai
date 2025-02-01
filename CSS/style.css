@@ -737,12 +737,10 @@ body {
 
 /* Contact-page */
 .ContactSection1 {
-  max-width: 100%;
   width: 1440px;
+  max-width: 100%;
   background-color: #014e56;
-  display: flex;
   overflow-x: hidden;
-  padding-top: 55px;
 }
 
 .ContactS1Container {
@@ -773,6 +771,7 @@ body {
 
 .S1Container-left ul {
   list-style: none;
+  padding-bottom: 80px;
 }
 
 .S1Container-left ul li {
@@ -790,15 +789,14 @@ body {
   width: 72px;
   height: 72px;
   margin-right: 20px;
-
 }
 
 /*Img kaireje */
 .S1ContactLeftimg {
   position: relative;
   top: 4px;
-  left: -100px;
-  width: 200px;
+  left: -112px;
+  width: 225px;
   height: 225px;
   clip-path: inset(0 0 0 50%);
 }
@@ -806,9 +804,9 @@ body {
 /* Img desineje apacioje */
 .S1ContactRightimg {
   position: relative;
-  top: 334px;
-  right: -100px;
-  width: 200px;
+  bottom: -335px;
+  right: -111px;
+  width: 225px;
   height: 225px;
   clip-path: inset(0 50% 0 0);
 }
@@ -847,7 +845,7 @@ body {
   padding-bottom: 20px;
   padding-left: 14px;
 }
- /* Perkeliau i  899 */ 
+ /* Perkeliau i  892 */ 
 
 .form-group input:hover,
 .form-group textarea:hover {
@@ -857,7 +855,7 @@ body {
 .form-group button {
   width: 123px;
   height: 48px;
-  padding: 10px 20px;
+  padding: 0;
   font-size: 16px;
   background-color: #fff;
   color: #034b5e;
@@ -1118,73 +1116,69 @@ Desktop 1440px.
 
   .ContactSection1 {
     width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 24px;
+    height: fit-content;
+    display: flex; 
   }
 
   .ContactS1Container {
-    flex-direction: column;
+    flex: 1;
   }
 
-  .S1Container-left, .S1FormContainer {
+  .S1Container-left {
     width: 100%;
-    padding: 0 24px;
   }
 
   .ContactS1H1 {
     font-size: 64px;
     line-height: 56px;
     width: auto;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .S1H3Small {
     font-size: 32px;
     line-height: 48px;
-    margin: 0 auto 24px;
+    margin-left: 20px;
+    margin-top: 10px;
   }
 
   .S1Container-left ul {
-    padding-top: 20px;
-    margin-bottom: 24px;
-    margin-left: 75px;
+    padding-top: 10px;
+    margin-bottom: 4px;
+    margin-left: -100px;
   }
 
   .S1Container-left ul li {
     font-size: 18px;
     line-height: 24px;
-    flex-direction: row;
     align-items: center;
     margin-bottom: 16px;
   }
 
-  .S1Container-left ul li img {
-    width: 48px;
-    height: 48px;
-    margin-right: 12px;
-  }
-
   .S1ContactLeftimg {
     position: relative;
-    max-width: 200px;
-    max-height: 200px;
-    top: calc(16% - 20px);
-    left: calc(-19% - 10px);
-    clip-path: inset(0 0 0 40%)
+    width: 225px;
+    height: 225px;
+    clip-path: inset(0 0 0 50%)
   }
 
   .S1ContactRightimg {
     position: relative;
-    max-width: 200px;
-    max-height: 200px;
-    clip-path: inset(0 40% 0 0);
-    bottom: calc(3% + 11px);
-    right: calc(-84% - 19px)
+    width: 200px;
+    height: 225px;
+    clip-path: inset(0 50% 0 0);
   }
 
   .S1FormContainer {
-    max-width: 100%;
+    font-family: "Livvic";
+    width: 100%;
+    max-width: 540px;
+    margin-left: 70px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    
   }
 
   .form-group input, .form-group textarea {

@@ -737,17 +737,17 @@ body {
 
 /* Contact-page */
 .ContactSection1 {
+  max-width: 100%;
   width: 1440px;
   background-color: #014e56;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 548px;
+  overflow-x: hidden;
+  padding-top: 55px;
 }
 
 .ContactS1Container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -760,26 +760,24 @@ body {
   font-size: 64px;
   line-height: 100px;
   width: 350px;
-  position: relative;
 }
 
 .S1H3Small {
   font-family: "Livvic";
+  width: 540px;
   font-size: 32px;
   font-style: bold;
   font-weight: 700;
   line-height: 48px;
-  margin-left: 0;
 }
 
 .S1Container-left ul {
   list-style: none;
-  padding-top: 54px;
 }
 
 .S1Container-left ul li {
   font-family: "Livvic";
-  margin-bottom: 15px;
+  margin-top: 30px;
   color: #ffffff;
   font-style: bold;
   display: flex;
@@ -792,6 +790,7 @@ body {
   width: 72px;
   height: 72px;
   margin-right: 20px;
+
 }
 
 /*Img kaireje */
@@ -807,7 +806,7 @@ body {
 /* Img desineje apacioje */
 .S1ContactRightimg {
   position: relative;
-  bottom: -320px;
+  top: 334px;
   right: -100px;
   width: 200px;
   height: 225px;
@@ -819,16 +818,17 @@ body {
   width: 100%;
   max-width: 540px;
   flex: 1;
+  padding-left: 5%;
 }
 
 .form-group {
   margin-bottom: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .form-group label::placeholder {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 5px;
   margin-left: 20px;
   color: #ffffff50;
@@ -837,21 +837,17 @@ body {
 .form-group input,
 .form-group textarea {
   width: 540px;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
   border-bottom: 1px solid #ffffff50;
   color: #ffffff;
   background: transparent;
   outline: none;
   resize: none;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   padding-left: 14px;
 }
-.form-group input:focus,
-.form-group textarea:focus {
-  color: #ffffff;
-  border-bottom: 1px solid #79c8c7;
-}
+ /* Perkeliau i  899 */ 
 
 .form-group input:hover,
 .form-group textarea:hover {
@@ -893,8 +889,9 @@ body {
   font-family: "Livvic";
 }
 
-.form-group input:focus {
-  border-bottom: 1px solid #ffffff;
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #79c8c7;
   opacity: 1;
   font-family: "Livvic";
 }
@@ -925,6 +922,7 @@ Desktop 1440px.
 @media (max-width: 1440px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 }
 /* Tablet  */
@@ -938,6 +936,7 @@ Desktop 1440px.
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   /* Header */
@@ -1137,7 +1136,6 @@ Desktop 1440px.
     font-size: 64px;
     line-height: 56px;
     width: auto;
-    text-align: center;
     margin-bottom: 24px;
   }
 
@@ -1232,20 +1230,7 @@ Desktop 1440px.
 
 /* Section 1 */
 
-.ContactSection1 {
-  width: 100%;
-  height: 100%;
-  flex-shrink: 1;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* Ensure children are stacked vertically */
-}
 
-.ContactS1Container {
-  width: 100%; /* Ensure children are stacked vertically */
-  flex-direction: column;
-  text-align: center;
-}
 /*
 .S1FormContainer {
   width: 100%;

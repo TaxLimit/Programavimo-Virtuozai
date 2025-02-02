@@ -651,40 +651,97 @@ body {
 
 /* Section 1 */
 
+.About-Page .flex-container{
+  max-width: 1100px;
+  min-width: 1100px;
+  max-height: 159px;
+  min-height: 159px;
+  align-items: center;
+  flex-direction: row
+  
+}
 .About-Page .S1H1Sizing {
+  margin-left: 0px;
   font-family: "Livvic";
-  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
   height: 100px;
-  margin-left: 165px;
   font-size: 64px;
   line-height: 56px;
 }
 .About-Page .S1ParagraphSizing {
   width: 730px;
 }
-
 .About-Page .S1Container {
-  width: 730px;
   height: 156px;
+  width: 730px;
   gap: 44px;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 3px;
 }
-.About-Page .S1BottomRightDesign {
+.About-Page .S1BottomRightImage {
+  width: 200px;
   position: absolute;
   bottom: -4px;
-  right: -100px;
-  width: auto;
-  height: auto;
+  left: 1340px;
+  height: 200px;
 }
 .About-Page .Section1 {
+  position: relative;
   height: 267px;
   overflow: hidden;
-}
-
+  display: flex;
+  justify-content: center;
+ }
 .About-Page .rectangle {
   background-color: #f67e7e;
 }
+@media (max-width: 768px) {
+  .About-Page .rectangle {
+    display: none;
+  }
+  .About-Page .Section1 {
+    max-height: 356px;
+    min-height: 356px;
+
+  }
+  .About-Page .flex-container {
+    max-width: 683px;
+    min-width: 683px;
+    min-height: 220px;
+    max-height: 220px;
+    flex-direction: column; 
+    justify-content: flex-end;
+  }
+  .About-Page .S1Container {
+    width: 457px;
+    height: 140px; 
+    margin: 0;
+    padding: 0;
+  }
+  .About-Page .S1ParagraphSizing{
+    font-size: 15px;
+    line-height: 25px;
+    height: 140px;
+    width: 457px;
+    top: 78px;
+    left: 153px;
+    margin-top: 0;
+  }
+  .About-Page .S1H1Sizing{
+    text-align: center;
+    min-width: 683px;
+    max-width: 683px;
+    height: 56px;
+  }
+  .About-Page .S1BottomRightImage {
+    left: 668px;
+    width: 100%;
+    bottom: 0px;
+  }
+}
+
+
 
 /* About-Page_section2 */
 
@@ -944,7 +1001,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-}
+} 
 
 .S1Container-left {
   flex: 1;
@@ -1240,7 +1297,7 @@ Desktop 1440px.
     width: 100%;
   }
 
-  .S1BottomRightDesign {
+  .S1BottomRightImage {
     left: 206px;
     right: 204px;
   }
@@ -1587,7 +1644,7 @@ Desktop 1440px.
     width: 100%;
   }
 
-  .S1BottomRightDesign {
+  .S1BottomRightImage {
     left: 10px;
     right: 8px;
     top: 307px;

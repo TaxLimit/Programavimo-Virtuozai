@@ -1670,3 +1670,98 @@ Desktop 1440px.
     left: 0;
   }
 }
+
+@media screen and (max-width: 375px){
+  
+
+.footer {
+   position: relative; 
+  max-width: 375;
+  height: 432px;
+  margin-top: auto;
+}
+
+ .footer-container {
+  position: relative;
+  width: 100%;
+  width: 327px;
+  height: 302px;
+  flex-shrink: 0;
+
+  
+}
+
+.footer-logo {
+  text-align: center;
+  width: 96px;
+  height: 24px;
+  left: 116px;
+  position: absolute; 
+ 
+}
+
+
+.footer-nav-buttons {
+display: flex;
+gap: 24px;
+text-align: center;
+top: 48px;
+left: 98px;
+width: 107px;
+height: 25px;
+font-size: 15px;
+gap: 24px;
+
+
+ 
+}
+
+.footer-nav-button{
+position: absolute;
+ font-size: 15px;
+
+  
+}
+
+.footer-nav-about{
+  left: 75px;
+ 
+}
+
+.footer-nav-home{
+  left: 15px;
+}
+
+
+.footer-contact {
+width:327px;
+height: 100px;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px;
+opacity: 0.6;
+top: 145px;
+font-family: "Livvic";
+
+
+}
+.footer-social-networks {
+top: 240px;
+left: 120px;
+position: absolute;
+
+}
+
+.footer-copyright{
+  display: inline;
+  text-align: center;
+  left: 45px;
+}
+
+
+
+
+
+}

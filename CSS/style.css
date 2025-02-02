@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Livvic;
 }
 
 body {
@@ -174,8 +175,6 @@ body {
   top: 20px;
   right: 20px;
 }
-
-/* Mobile meniu (iš pradžių paslėptas) */
 
 /* Section 1 */
 
@@ -532,7 +531,7 @@ body {
 /*footer */
 
 .footer {
-  width: 1440px; /* Bendras skilties plotis */
+  max-width: 1440px; /* Bendras skilties plotis */
   height: 196px; /* Bendras skilties aukštis */
   flex-shrink: 0;
   display: flex;
@@ -685,6 +684,202 @@ body {
 
 .About-Page .rectangle {
   background-color: #f67e7e;
+}
+
+/* About-Page_section2 */
+
+.About-Page_section2 {
+  width: 1440px;
+  height: 1002px;
+  font-family: "Livvic";
+  background-color: #004047;
+  color: #fff;
+  position: relative;
+}
+/* Img on top left */
+.About-Page_section2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: url("../IMG/bg-pattern-about-2-contact-1.svg") no-repeat;
+  background-size: contain;
+}
+/* Img on bottom right */
+.About-Page_section2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 147px;
+  height: 100px;
+  background: url("../IMG/bg-pattern-home-4-about-3.svg") no-repeat;
+  background-size: contain;
+}
+/* All text and cards */
+.About-Page_section2 .flex_container_4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 165px 165px;
+  text-align: center;
+  position: relative;
+  height: 722px;
+}
+/* heading "Meet the directors" */
+.About-Page_section2 .About-Page_section2-heading {
+  font-size: 48px;
+  font-weight: 920px;
+  padding-top: 140px;
+  margin-bottom: 64px;
+}
+/* all cards */
+.About-Page_section2 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: 253px;
+  gap: 78px 30px;
+}
+
+.About-Page_section2 .card1 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card2 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card3 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card3 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card4 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card5 {
+  background-color: #012f34;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.About-Page_section2 .card6 {
+  background-color: #002529;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  place-items: center; /* Centruoja ir horizontaliai, ir vertikaliai */
+  text-align: center;
+  height: 100%;
+}
+
+/* Img at cards */
+.About-Page_section2 .grid img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 3px solid #c4fffe;
+}
+
+.About-Page_section2 .grid p {
+  font-size: 15px;
+  color: #ffffff;
+  font-style: italic;
+  line-height: 25px;
+  width: 302px;
+  height: 25px;
+  margin-bottom: 56px;
+}
+.About-Page_section2 .grid h3 {
+  font-size: 18px;
+  color: #79c8c7;
+  font-style: bold;
+  margin-top: 16px;
+  width: 302px;
+  height: 28px;
+}
+.About-Page_section2 .card6 h3 {
+  margin-top: 15px;
+}
+.About-Page_section2 .card6 p {
+  width: 254px;
+  height: 75px;
+  font-size: 15px;
+  color: #ffffff;
+  font-style: normal;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+.About-Page_section2 .card6 div {
+  width: 60px;
+  height: 20px;
+  font-size: 15px;
+  color: #ffffff;
+  font-style: normal;
+  margin-bottom: 35px;
+  margin-top: 0px;
+  display: flex;
+  gap: 16px;
+}
+
+/* + button*/
+.About-Page_section2 .grid .plus-btn {
+  background-color: #f67e7e;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.About-Page_section2 .grid .plus-btn:hover {
+  background-color: #79c8c7;
+}
+/* x button*/
+.card6 .x-btn {
+  background-color: #79c8c7;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.About-Page_section2 .grid .x-btn:hover {
+  background-color: #f67e7e;
+}
+.card6 .x-btn svg {
+  transform: rotate(45deg);
 }
 
 /* Our Clients Article */
@@ -941,7 +1136,30 @@ Desktop 1440px.
 
   .navbar {
     width: 100%;
-    height: 200px;
+    height: 200px; /* height: 200px; Sumažiname aukštį */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    left: 39px;
+    top: 72px;
+  }
+
+  .home-button {
+    left: 215px;
+    top: 74px;
+    gap: 40px;
+  }
+
+  .about-button {
+    left: 304px;
+    top: 74px;
+  }
+
+  .contact-button {
+    right: 40px;
+    top: 64px;
   }
 
   /* Section 1 */
@@ -1029,16 +1247,50 @@ Desktop 1440px.
     width: 100%;
   }
 
+  .S2Container {
+    width: 573px;
+    height: 510px;
+    margin: 100px 97px;
+  }
+
+  .TitleInLeft {
+    gap: 36px;
+  }
+
+  .Title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .S2BottomRightDesign {
+    top: 0px;
+  }
+
+  .ListInRight {
+    top: 264px;
+    left: 97px;
+  }
+
+  .Description {
+    width: 478px;
+  }
+
   /* Section 3 */
 
   .section-3 {
     width: 100%;
     height: 1199px;
   }
+
+  .flex-container_section-3 {
+    height: 1199px;
+  }
+
   .section-3-heading {
-    width: 573px;
+    width: 473px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
     color: #fff;
     text-align: center;
     font-family: Livvic;
@@ -1059,14 +1311,28 @@ Desktop 1440px.
 
   .testimonials-box {
     width: 100%;
+    padding-top: 48px;
     height: auto;
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
     align-items: center;
   }
+
+  .testimonial-card {
+    width: 573px;
+  }
+
   .testimonial-author {
-    margin-top: 0px;
+    margin-top: 16px;
+  }
+
+  .quotes-icon {
+    left: 254px;
+  }
+
+  .testimonial-img {
+    margin: 16px 256px 48px;
   }
 
   /* Article */
@@ -1195,78 +1461,71 @@ Desktop 1440px.
     margin-right: 390px;
   }
 }
+=======
 
-/* Footer */
+  /* Footer */
 
-.footer {
-  width: 100%;
-  height: 200px;
-  margin-top: auto;
-}
-.footer-container {
-  width: 100%;
-}
-
-/* ABOUT.HTML */
-
-/* Section 3 */
-
-.About-Page .Our-Clients {
-  width: 100%;
-}
-.About-Page .client-logos-container {
-  width: 100%;
-}
-
-
-
-
-
-/* Section 1 */
-
-
-/*
-.S1FormContainer {
-  width: 100%;
-}
-.S1ContactRightimg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-} */
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    /* height: 200px; Sumažiname aukštį */
-    flex-direction: column;
-    align-items: center;
+  .footer {
+    position: relative;
+    max-width: 768;
+    height: 271px;
+    margin-top: auto;
   }
 
-  .logo {
-    left: 39px;
-    top: 72px;
+  .footer-container {
+    display: inline-flex;
+    width: 100%;
+    width: 689px;
+    height: 159px;
+    gap: 302px;
+    flex-shrink: 0;
+    align-items: flex-start;
   }
 
-  .home-button {
-    left: 215px;
-    top: 74px;
-    gap: 40px;
+  .footer-logo {
+    width: 96px;
+    height: 24px;
+    position: absolute;
   }
-
-  .about-button {
-    left: 304px;
-    top: 74px;
+  .footer-nav-buttons {
+    position: absolute;
+    left: 0;
+    top: 83px;
+    width: 42px;
+    height: 25px;
   }
-
-  .contact-button {
-    right: 40px;
-    top: 64px;
+  .footer-contact {
+    width: 689px;
+    height: 100px;
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+    top: 56px;
+    right: 0;
+  }
+  .footer-nav-about {
   }
 }
 
 @media screen and (max-width: 375px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
 
+  /*           INDEX.HTML          */
+  /* Nav */
+  .navbar {
+    width: 100%;
+    height: 160px;
+  }
   .logo {
     top: 48px;
     left: 24px;
@@ -1285,14 +1544,255 @@ Desktop 1440px.
   .contact-button {
     display: none;
   }
-.burger-menu {
+  .burger-menu {
     display: block;
     top: 41px;
     right: 24px;
-    
   }
+  /* Section 1 */
+  .Section1 {
+    width: 100%;
+    height: 407px;
+    margin-top: auto;
+  }
+
+  .Section1 h1 {
+    width: 327px;
+    position: absolute;
+    top: 0;
+    left: 24px;
+  }
+
+  .S1H1Sizing {
+    margin-left: 0;
+  }
+
+  .Section1H1 {
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+  }
+
+  .Section1 span {
+    color: #f67e7e;
+    font-family: Livvic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .S1Container p {
+    position: absolute;
+    top: 98px;
+    left: 24px;
+    width: 327px;
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 186.667% */
+  }
+
+  .S1LeftDesign {
+    display: none;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .S1Container {
+    width: 100%;
+    flex-shrink: 1;
+    height: 407px;
+    flex-wrap: wrap;
+  }
+  .S1ParagraphSizing {
+    width: 100%;
+  }
+
+  .S1BottomRightDesign {
+    left: 10px;
+    right: 8px;
+    top: 307px;
+  }
+
+  /*  Section 2 */
+
+  .Section2 {
+    width: 100%;
+    min-height: 1073px;
+    margin-top: auto;
+  }
+  .section2Container {
+    width: 100%;
+  }
+  .S2Container {
+    width: 100%;
+    margin: 0;
+  }
+  .ListInRight {
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+  }
+  .Item1 {
+    width: 100%;
+  }
+  .Item2 {
+    width: 100%;
+  }
+  .Item3 {
+    width: 100%;
+  }
+  .Description {
+    flex-shrink: 1;
+  }
+  .testimonial-img {
+    margin: 0;
+  }
+  /* Section 3 */
+
+  .section-3 {
+    width: 100%;
+    min-height: 1410px;
+  }
+  .section-3-heading {
+    width: 100%;
+  }
+  .testimonial-card {
+    width: 100%;
+  }
+  /* Article */
+  .article {
+    width: 100%;
+    height: 302px;
+  }
+  .mask {
+    height: 302px;
+  }
+  .content {
+    width: 100%;
+    left: 0%;
+  }
+  .button-container {
+    width: 100%;
+    left: 0%;
+  }
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: 432px;
+  }
+  .footer-container {
+    width: 100%;
+    height: 432px;
+  }
+  .footer-contact {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 375px){
+  
+
+.footer {
+   position: relative; 
+  max-width: 375;
+  height: 432px;
+  margin-top: auto;
+}
+
+ .footer-container {
+  position: relative;
+  width: 100%;
+  width: 327px;
+  height: 302px;
+  flex-shrink: 0;
+
+  
+}
+
+.footer-logo {
+  text-align: center;
+  width: 96px;
+  height: 24px;
+  left: 116px;
+  position: absolute; 
+ 
+}
+
+
+.footer-nav-buttons {
+display: flex;
+gap: 24px;
+text-align: center;
+top: 48px;
+left: 98px;
+width: 107px;
+height: 25px;
+font-size: 15px;
+gap: 24px;
+
+
+ 
+}
+
+.footer-nav-button{
+position: absolute;
+ font-size: 15px;
+
+  
+}
+
+.footer-nav-about{
+  left: 75px;
+ 
+}
+
+.footer-nav-home{
+  left: 15px;
+}
+
+
+.footer-contact {
+width:327px;
+height: 100px;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px;
+opacity: 0.6;
+top: 145px;
+font-family: "Livvic";
+
+
+}
+.footer-social-networks {
+top: 240px;
+left: 120px;
+position: absolute;
+
+}
+
+.footer-copyright{
+  display: inline;
+  text-align: center;
+  left: 45px;
 }
 
 
 
 
+
+}

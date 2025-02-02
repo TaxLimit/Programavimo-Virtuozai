@@ -941,8 +941,10 @@ body {
 
 /* Our Clients Article */
 
-.About-Page .Our-Clients {
-  width: 1440px;
+.Our-Clients {
+  max-width: 1440px;
+  min-width: 1440px;
+  box-sizing: border-box;
   height: 437px;
   background-color: #012f34;
   display: flex;
@@ -953,38 +955,132 @@ body {
   position: relative;
 }
 
-.About-Page .section-title-container {
+.Our-Clients-Container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 67px;
+  max-width: 1110px;
 }
 
-.About-Page .section-title {
+.section-title-container {
+  width: 920px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
   color: #fff;
   font-family: "Livvic";
   font-size: 48px;
   font-weight: 700;
   line-height: 48px;
+  text-align: center;
 }
 
-.About-Page .client-logos-container {
+.client-logos-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 100px;
-  width: 1110px;
-  height: 25px;
+  gap: 75px;
+  flex-wrap: nowrap;
+  max-width: 1110px;
+  min-width: 1110px;
+  max-height: 45px;
+  height: 45px;
+  overflow-x: hidden;
+  white-space: normal;
 }
 
-.About-Page .client-logo {
-  height: 100%;
-  width: auto;
+.client-logo {
+  display: inline-block;
 }
 
-.About-Page .decorative-img {
+.client-logo img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 45px ;
+}
+
+.decorative-img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .Our-Clients {
+    max-width: 768px;
+    min-width: 768px;
+    max-height: 308px;
+    min-height: 308px;
+  }
+  .Our-Clients-Container{
+    max-height: 108px;
+    max-width: 689px;
+    gap: 48px;
+  }
+
+  .section-title-container{
+    max-width: 457px;
+    max-height: 32px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .client-logos-container {
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-height: 28px;
+    min-height: 28px;
+    max-width: 689px;
+    min-width: 689px;
+  }
+  .decorative-img {
+    top: -100px;
+    clip-path: inset(50% 0 0 0);
+  }
+}
+
+@media(max-width: 375px){
+  .section-title-container{
+    max-width: 327px;
+    min-width: 327px;
+  }
+  .About-Page .Our-Clients {
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 632px;
+    min-height: 632px;
+  }
+  .Our-Clients-Container{
+    max-width: 327px;
+    min-width: 327px;
+    max-height: 456px;
+    min-height: 456px;
+    gap: 64px;
+  }
+  .About-Page .client-logos-container {
+    flex-wrap: wrap;
+    max-width: 162.21px;
+    min-width: 162.21px;
+    min-height: 360px;
+    max-height: 360px;
+  }
+
+  .About-Page .decorative-img {
+    top: -100px;
+    left: -100px;
+    clip-path: inset(50% 0 0 0);
+  }
+  .section-title {
+    font-size: 32px;
+  }
 }
 
 /* Contact-page */

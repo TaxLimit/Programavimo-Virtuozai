@@ -682,7 +682,7 @@ body {
 .About-Page .S1BottomRightImage {
   width: 200px;
   position: absolute;
-  bottom: -4px;
+  bottom: 0px;
   left: 1340px;
   height: 200px;
 }

@@ -942,6 +942,9 @@ body {
 /* Our Clients Article */
 
 .About-Page .Our-Clients {
+  max-width: 1440px;
+  min-width: 1440px;
+  box-sizing: border-box;
   width: 1440px;
   height: 437px;
   background-color: #012f34;
@@ -952,13 +955,11 @@ body {
   gap: 40px;
   position: relative;
 }
-
 .About-Page .section-title-container {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .About-Page .section-title {
   color: #fff;
   font-family: "Livvic";
@@ -966,26 +967,54 @@ body {
   font-weight: 700;
   line-height: 48px;
 }
-
 .About-Page .client-logos-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
-  width: 1110px;
   height: 25px;
+  max-width: 1110px;
+  min-width: 1110px;
 }
-
 .About-Page .client-logo {
   height: 100%;
   width: auto;
 }
-
 .About-Page .decorative-img {
   position: absolute;
   top: 0;
   left: 0;
 }
+.About-Page .client-logo img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .About-Page .Our-Clients {
+    max-width: 768px;
+    min-width: 768px;
+    max-height: 308px;
+    min-height: 308px;
+  }
+  .About-Page .client-logos-container {
+    max-width: 689px;
+    min-width: 689px;
+    gap: 30px;  
+  }
+  .About-Page .section-title {
+    font-size: 34px;
+    line-height: 28px;
+  }
+  .About-Page .client-logo img {
+    height: 20px;
+  }
+  .About-Page .decorative-img {
+    top: -100px;
+    clip-path: inset(50% 0 0 0);
+  }
+}
+
 
 /* Contact-page */
 .ContactSection1 {

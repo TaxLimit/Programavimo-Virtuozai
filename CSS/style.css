@@ -933,16 +933,14 @@ body {
 /* Contact-page */
 .ContactSection1 {
   width: 1440px;
+  max-width: 100%;
   background-color: #014e56;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 548px;
+  overflow-x: hidden;
 }
 
 .ContactS1Container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -955,26 +953,25 @@ body {
   font-size: 64px;
   line-height: 100px;
   width: 350px;
-  position: relative;
 }
 
 .S1H3Small {
   font-family: "Livvic";
+  width: 540px;
   font-size: 32px;
   font-style: bold;
   font-weight: 700;
   line-height: 48px;
-  margin-left: 0;
 }
 
 .S1Container-left ul {
   list-style: none;
-  padding-top: 54px;
+  padding-bottom: 80px;
 }
 
 .S1Container-left ul li {
   font-family: "Livvic";
-  margin-bottom: 15px;
+  margin-top: 30px;
   color: #ffffff;
   font-style: bold;
   display: flex;
@@ -993,8 +990,8 @@ body {
 .S1ContactLeftimg {
   position: relative;
   top: 4px;
-  left: -100px;
-  width: 200px;
+  left: -112px;
+  width: 225px;
   height: 225px;
   clip-path: inset(0 0 0 50%);
 }
@@ -1002,9 +999,9 @@ body {
 /* Img desineje apacioje */
 .S1ContactRightimg {
   position: relative;
-  bottom: -320px;
-  right: -100px;
-  width: 200px;
+  bottom: -335px;
+  right: -111px;
+  width: 225px;
   height: 225px;
   clip-path: inset(0 50% 0 0);
 }
@@ -1014,16 +1011,17 @@ body {
   width: 100%;
   max-width: 540px;
   flex: 1;
+  padding-left: 5%;
 }
 
 .form-group {
   margin-bottom: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .form-group label::placeholder {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 5px;
   margin-left: 20px;
   color: #ffffff50;
@@ -1032,21 +1030,17 @@ body {
 .form-group input,
 .form-group textarea {
   width: 540px;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
   border-bottom: 1px solid #ffffff50;
   color: #ffffff;
   background: transparent;
   outline: none;
   resize: none;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   padding-left: 14px;
 }
-.form-group input:focus,
-.form-group textarea:focus {
-  color: #ffffff;
-  border-bottom: 1px solid #79c8c7;
-}
+ /* Perkeliau i  892 */ 
 
 .form-group input:hover,
 .form-group textarea:hover {
@@ -1056,7 +1050,7 @@ body {
 .form-group button {
   width: 123px;
   height: 48px;
-  padding: 10px 20px;
+  padding: 0;
   font-size: 16px;
   background-color: #fff;
   color: #034b5e;
@@ -1073,11 +1067,6 @@ body {
   color: #f67e7e;
 }
 
-/* .form-group input:invalid::placeholder,
-.form-group textarea.invalid::placeholder {
-  color: #F67E7E;
-    } */
-
 .error-message {
   display: none;
   color: #f67e7e;
@@ -1090,23 +1079,24 @@ body {
 .form-group input:invalid:focus {
   border-bottom: 2px solid #f67e7e;
   opacity: 1;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
-.form-group input:focus {
-  border-bottom: 1px solid #ffffff;
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #79c8c7;
   opacity: 1;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
 .form-group input:invalid {
   opacity: 0.6;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
 .form-group input {
   opacity: 0.6;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
 .form-group input:invalid + .error-message,
@@ -1125,6 +1115,7 @@ Desktop 1440px.
 @media (max-width: 1440px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 }
 /* Tablet  */
@@ -1138,6 +1129,7 @@ Desktop 1440px.
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   /* Header */
@@ -1386,6 +1378,91 @@ Desktop 1440px.
     text-align: center;
   }
 
+  /* CONTACT.HTML */
+
+  .ContactSection1 {
+    width: 100%;
+    height: fit-content;
+    display: flex; 
+  }
+
+  .ContactS1Container {
+    flex: 1;
+  }
+
+  .S1Container-left {
+    width: 100%;
+  }
+
+  .ContactS1H1 {
+    font-size: 64px;
+    line-height: 56px;
+    width: auto;
+    margin-bottom: 12px;
+  }
+
+  .S1H3Small {
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .S1Container-left ul {
+    padding-top: 10px;
+    margin-bottom: 4px;
+    margin-left: -100px;
+  }
+
+  .S1Container-left ul li {
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .S1ContactLeftimg {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    clip-path: inset(0 0 0 50%)
+  }
+
+  .S1ContactRightimg {
+    position: relative;
+    width: 200px;
+    height: 225px;
+    clip-path: inset(0 50% 0 0);
+  }
+
+  .S1FormContainer {
+    font-family: "Livvic";
+    width: 100%;
+    max-width: 540px;
+    margin-left: 70px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    
+  }
+
+  .form-group input, .form-group textarea {
+    width: calc(100% - 52px);
+    max-width: 520px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .form-group button {
+    width: 100%;
+    max-width: 123px;
+    height: 48px;
+    margin-right: 390px;
+  }
+}
+=======
+
   /* Footer */
 
   .footer {
@@ -1430,52 +1507,6 @@ Desktop 1440px.
     right: 0;
   }
   .footer-nav-about {
-  }
-
-  .footer-social-networks {
-    position: absolute;
-    top: 150px;
-    left: 0;
-    height: 24px;
-    width: 102px;
-  }
-
-  /* Section 3 */
-
-  .About-Page .Our-Clients {
-    width: 100%;
-  }
-  .About-Page .client-logos-container {
-    width: 100%;
-  }
-
-  /* CONTACT.HTML */
-
-  /* Section 1 */
-
-  .ContactSection1 {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 1;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Ensure children are stacked vertically */
-  }
-
-  .ContactS1Container {
-    width: 100%; /* Ensure children are stacked vertically */
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .S1FormContainer {
-    width: 100%;
-  }
-  .S1ContactRightimg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
   }
 }
 

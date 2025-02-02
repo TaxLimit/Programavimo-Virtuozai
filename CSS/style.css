@@ -327,7 +327,7 @@ body {
   gap: 54px;
 }
 
-/* Desktop Body Section 3 start */
+/* ----------Desktop Body Section 3 start---------- */
 .section-3 {
   width: 1440px;
   height: 745px;
@@ -340,12 +340,13 @@ body {
   flex-direction: column;
 }
 
-.section-3-heading {
-  width: 932px;
-  height: 96px;
+.heading-container {
   margin-top: 140px;
   margin-right: 254px;
   margin-left: 254px;
+}
+
+.section-3-heading {
   color: #fff;
   text-align: center;
   font-family: Livvic;
@@ -379,6 +380,9 @@ body {
   width: 350px;
   margin-top: 36px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-text {
@@ -395,6 +399,9 @@ body {
 
 .testimonial-author {
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-author-name {
@@ -418,7 +425,7 @@ body {
 }
 
 .testimonial-img {
-  margin: 32px 144px 0px;
+  margin-top: 32px;
   width: 62px;
   height: 62px;
   border-radius: 62px;
@@ -442,11 +449,10 @@ body {
 
 .quotes-icon {
   position: absolute;
-  left: 142px;
   top: -36px;
 }
 
-/* Desktop Body Section 3 end */
+/* ----------Desktop Body Section 3 end---------- */
 
 /* Article */
 
@@ -740,8 +746,6 @@ body {
     bottom: 0px;
   }
 }
-
-
 
 /* About-Page_section2 */
 
@@ -1336,18 +1340,22 @@ Desktop 1440px.
 
   .section-3 {
     width: 100%;
-    height: 1199px;
+    height: fit-content;
   }
 
-  .flex-container_section-3 {
-    height: 1199px;
+  .flex-container_section-3{
+    height: fit-content;
+    align-items: center;
+  }
+
+  .heading-container {
+    max-width: 573px;
+    margin-top: 100px;
+    margin-left: 97px;
+    margin-right: 98px;
   }
 
   .section-3-heading {
-    width: 473px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
     color: #fff;
     text-align: center;
     font-family: Livvic;
@@ -1368,7 +1376,7 @@ Desktop 1440px.
 
   .testimonials-box {
     width: 100%;
-    padding-top: 48px;
+    padding: 48px 97px 52px 98px;
     height: auto;
     flex-direction: column;
     margin-left: 0;
@@ -1377,7 +1385,9 @@ Desktop 1440px.
   }
 
   .testimonial-card {
-    width: 573px;
+    width: 100%;
+    max-width: 573px;
+    
   }
 
   .testimonial-author {
@@ -1385,12 +1395,14 @@ Desktop 1440px.
   }
 
   .quotes-icon {
-    left: 254px;
+    /* left: 44%; */
   }
 
   .testimonial-img {
-    margin: 16px 256px 48px;
+    margin-top: 16px;
+    margin-bottom: 48px;
   }
+  /* Secrtion-3 end */
 
   /* Article */
   .article {

@@ -679,7 +679,7 @@ body {
   margin-left: 30px;
   margin-top: 3px;
 }
-.About-Page .S1BottomRightImage {
+.About-Page .S1BottomRightDesign {
   width: 200px;
   position: absolute;
   bottom: 0px;
@@ -734,7 +734,7 @@ body {
     max-width: 683px;
     height: 56px;
   }
-  .About-Page .S1BottomRightImage {
+  .About-Page .S1BottomRightDesign {
     left: 668px;
     width: 100%;
     bottom: 0px;
@@ -1297,7 +1297,7 @@ Desktop 1440px.
     width: 100%;
   }
 
-  .S1BottomRightImage {
+  .S1BottomRightDesign {
     left: 206px;
     right: 204px;
   }
@@ -1644,7 +1644,7 @@ Desktop 1440px.
     width: 100%;
   }
 
-  .S1BottomRightImage {
+  .S1BottomRightDesign {
     left: 10px;
     right: 8px;
     top: 307px;

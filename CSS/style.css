@@ -1394,10 +1394,6 @@ Desktop 1440px.
     margin-top: 16px;
   }
 
-  .quotes-icon {
-    /* left: 44%; */
-  }
-
   .testimonial-img {
     margin-top: 16px;
     margin-bottom: 48px;
@@ -1726,56 +1722,36 @@ Desktop 1440px.
   .Description {
     flex-shrink: 1;
   }
-  .testimonial-img {
-    margin: 0;
-  }
-  /* Section 3 */
 
-  /* .section-3 {
-    width: 100%;
-    min-height: 1410px;
-  }
-  .section-3-heading {
-    width: 100%;
-  }
-  .testimonial-card {
-    width: 100%;
-  }
- */
-
- /* Section 3 */
+ /* ----------Section 3---------- */
 
  .section-3 {
-  height: 1410px;
+  height: fit-content;
 }
 
 .flex-container_section-3 {
-  height: 1410px;
+  height: fit-content;
 }
 
-.section-3-heading {
-  width: 327px;
+.heading-container {
+  max-width: 327px;
   margin-top: 140px;
-  height: auto;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .testimonials-box {
+  padding: 48px 24px 116px 24px;
 }
 
 .testimonial-card {
-  width: 327px;
+  width: 100%;
+  max-width: 327px;
 }
+/* ----------Section 3 end---------- */
 
-.quotes-icon {
-  left: 130px
-}
 
-.testimonial-img {
-  margin-left: 133px;
-  margin-right: 134px;
-}
-  
-  /* Article */
+   /* Article */
   .article {
     width: 100%;
     height: 302px;

@@ -1623,17 +1623,19 @@ Desktop 1440px.
     height: 48px;
     margin-right: 390px;
   }
-
+}
+  @media screen and (max-width: 768px) {
   /* Footer */
 
   .footer {
     position: relative;
-    max-width: 768;
+    max-width: 768px;
     height: 271px;
     margin-top: auto;
   }
 
   .footer-container {
+    
     display: inline-flex;
     width: 100%;
     width: 689px;
@@ -1647,6 +1649,7 @@ Desktop 1440px.
     width: 96px;
     height: 24px;
     position: absolute;
+    top: 10px;
   }
   .footer-nav-buttons {
     position: absolute;
@@ -1667,8 +1670,15 @@ Desktop 1440px.
     top: 56px;
     right: 0;
   }
-  .footer-nav-about {
+  .footer-social-networks {
+    position: absolute;
+    left: 0px;
+    top:145px
 
+  }
+
+  .footer-copyright {
+    top: 145px;
   }
 }
 
@@ -1949,7 +1959,7 @@ Desktop 1440px.
   }
   .footer-contact {
     width: 100%;
-    left: 0;
+    
   }
 }
 

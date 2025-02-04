@@ -700,6 +700,7 @@ body {
 .About-Page .rectangle {
   background-color: #f67e7e;
 }
+
 @media (max-width: 768px) {
   .About-Page .rectangle {
     display: none;
@@ -707,7 +708,6 @@ body {
   .About-Page .Section1 {
     max-height: 356px;
     min-height: 356px;
-
   }
   .About-Page .flex-container {
     max-width: 683px;
@@ -744,6 +744,43 @@ body {
     bottom: 0px;
   }
 }
+@media (max-width: 375px){
+  .About-Page .flex-container, .About-Page .S1H1Sizing, .About-Page .S1Container, .About-Page .Section1Paragraph{
+    max-width: 327px;
+    min-width: 327px;
+  }
+  .About-Page .Section1{
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 360px;
+    min-height: 360px;
+  }
+  .About-Page .flex-container{
+    max-height: 252px;
+    min-height: 252px;
+  }
+  .About-Page .S1H1Sizing{
+    max-height: 40px;
+    min-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .About-Page .S1Container, .About-Page .Section1Paragraph {
+    max-height: 196px;
+    min-height: 196px;
+  }
+  .About-Page .Section1Paragraph{
+    left: 24px;
+    top: 60px;
+    line-height: 28px;
+  }
+    .About-Page .S1BottomRightDesign {
+    left: 275px;
+    width: 100%;
+    top: 260px;
+  }
+}
+
 
 /* About-Page_section2 */
 

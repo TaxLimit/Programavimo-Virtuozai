@@ -870,7 +870,7 @@ body {
   line-height: 25px;
   width: 302px;
   height: 25px;
-  margin-bottom: 56px;
+  margin-bottom: 84px;
 }
 .About-Page_section2 .grid h3 {
   font-size: 18px;
@@ -2046,9 +2046,8 @@ position: absolute;
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    justify-content: center; 
-    position: relative;
-    padding: 40px 20px; 
+    
+    
   }
 
   .About-Page_section2 .flex_container_4 {
@@ -2056,29 +2055,29 @@ position: absolute;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 573px;
+    height: 991px;
+    margin: 100px 98px 128px;
+    position: absolute;
+    
   }
 
   .About-Page_section2 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 281px); /* 2 stulpeliai vietoje 3 */
-    gap: 48px 11px; /* Mažesni tarpai tarp eilučių */
-    justify-content: center; /* Centruoja stulpelius tinklelyje */
-    margin: 0 auto; /* Užtikrina, kad tinklelis bus centre */
+    grid-template-columns: repeat(2, 281px); 
+    gap: 72px 11px; 
+    justify-content: center; 
+    
   }
 
   .About-Page_section2 .About-Page_section2-heading {
     font-size: 32px;
-    font-weight: 600; /* `445px` buvo neteisinga reikšmė */
-    padding-top: 50px; /* Sumažintas tarpas viršuje */
+    font-weight: 600; 
+    padding-top: 0px; 
     margin-bottom: 48px;
-    text-align: center; /* Užtikrina, kad tekstas centre */
+    text-align: center; 
   }
 
-  .About-Page_section2 .grid img {
-    width: 96px;
-    height: 96px;
-  }
 
   .About-Page_section2 .grid p {
     font-size: 15px;
@@ -2086,13 +2085,13 @@ position: absolute;
     font-style: italic;
     line-height: 25px;
     width: 233px;
-    text-align: center; /* Užtikrina, kad tekstas nebus prigludęs prie kairės */
+    text-align: center; 
   }
 
   .About-Page_section2 .grid h3 {
     font-size: 18px;
     color: #79c8c7;
-    font-weight: bold; /* Pataisyta sintaksė */
+    font-weight: bold; 
     margin-top: 16px;
     width: 233px;
     text-align: center;

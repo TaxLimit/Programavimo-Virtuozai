@@ -232,18 +232,19 @@ body {
   position: relative;
 }
 
-.S2BottomRightDesign {
-  position: absolute;
-  right: 0px;
-  bottom: -4px;
-}
-
 .S2Container {
   display: inline-flex;
   width: 1110px;
   height: 404px;
   flex-shrink: 0px;
   margin: 140px 165px;
+}
+
+.rectangle2 {
+  background-color: #f67e7e;
+  width: 50px;
+  height: 4px;
+  flex-shrink: 0;
 }
 
 .TitleInLeft {
@@ -253,6 +254,16 @@ body {
   flex-direction: column;
   gap: 54px;
   flex-shrink: 0px;
+}
+
+.Title {
+  color: #fff;
+  font-family: "Livvic";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  gap: 54px;
 }
 
 .ListInRight {
@@ -266,9 +277,7 @@ body {
   gap: 32px;
 }
 
-.Item1,
-.Item2,
-.Item3 {
+.Item1, .Item2, .Item3 {
   display: inline-flex;
   width: 540px;
   height: 94px;
@@ -288,7 +297,6 @@ body {
   height: 94px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   gap: 16px;
   flex-shrink: 0;
 }
@@ -310,24 +318,14 @@ body {
   line-height: 25px; /* 166.667% */
   opacity: 0.8;
 }
-.rectangle2 {
-  background-color: #f67e7e;
-  width: 50px;
-  height: 4px;
-  flex-shrink: 0;
+
+.S2BottomRightDesign {
+  position: absolute;
+  right: 0px;
+  bottom: -4px;
 }
 
-.Title {
-  color: #fff;
-  font-family: "Livvic";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  gap: 54px;
-}
-
-/* Desktop Body Section 3 start */
+/* ----------Desktop Body Section 3 start---------- */
 .section-3 {
   width: 1440px;
   height: 745px;
@@ -340,12 +338,13 @@ body {
   flex-direction: column;
 }
 
-.section-3-heading {
-  width: 932px;
-  height: 96px;
+.heading-container {
   margin-top: 140px;
   margin-right: 254px;
   margin-left: 254px;
+}
+
+.section-3-heading {
   color: #fff;
   text-align: center;
   font-family: Livvic;
@@ -379,6 +378,9 @@ body {
   width: 350px;
   margin-top: 36px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-text {
@@ -395,6 +397,9 @@ body {
 
 .testimonial-author {
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-author-name {
@@ -418,7 +423,7 @@ body {
 }
 
 .testimonial-img {
-  margin: 32px 144px 0px;
+  margin-top: 32px;
   width: 62px;
   height: 62px;
   border-radius: 62px;
@@ -442,11 +447,10 @@ body {
 
 .quotes-icon {
   position: absolute;
-  left: 142px;
   top: -36px;
 }
 
-/* Desktop Body Section 3 end */
+/* ----------Desktop Body Section 3 end---------- */
 
 /* Article */
 
@@ -651,40 +655,132 @@ body {
 
 /* Section 1 */
 
+.About-Page .flex-container{
+  max-width: 1100px;
+  min-width: 1100px;
+  max-height: 159px;
+  min-height: 159px;
+  align-items: center;
+  flex-direction: row
+  
+}
 .About-Page .S1H1Sizing {
+  margin-left: 0px;
   font-family: "Livvic";
-  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
   height: 100px;
-  margin-left: 165px;
   font-size: 64px;
   line-height: 56px;
 }
 .About-Page .S1ParagraphSizing {
   width: 730px;
 }
-
 .About-Page .S1Container {
-  width: 730px;
   height: 156px;
+  width: 730px;
   gap: 44px;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 3px;
 }
 .About-Page .S1BottomRightDesign {
+  width: 200px;
   position: absolute;
-  bottom: -4px;
-  right: -100px;
-  width: auto;
-  height: auto;
+  bottom: 0px;
+  left: 1340px;
+  height: 200px;
 }
 .About-Page .Section1 {
+  position: relative;
   height: 267px;
   overflow: hidden;
-}
-
+  display: flex;
+  justify-content: center;
+ }
 .About-Page .rectangle {
   background-color: #f67e7e;
 }
+
+@media (max-width: 768px) {
+  .About-Page .rectangle {
+    display: none;
+  }
+  .About-Page .Section1 {
+    max-height: 356px;
+    min-height: 356px;
+  }
+  .About-Page .flex-container {
+    max-width: 683px;
+    min-width: 683px;
+    min-height: 220px;
+    max-height: 220px;
+    flex-direction: column; 
+    justify-content: flex-end;
+  }
+  .About-Page .S1Container {
+    width: 457px;
+    height: 140px; 
+    margin: 0;
+    padding: 0;
+  }
+  .About-Page .S1ParagraphSizing{
+    font-size: 15px;
+    line-height: 25px;
+    height: 140px;
+    width: 457px;
+    top: 78px;
+    left: 153px;
+    margin-top: 0;
+  }
+  .About-Page .S1H1Sizing{
+    text-align: center;
+    min-width: 683px;
+    max-width: 683px;
+    height: 56px;
+  }
+  .About-Page .S1BottomRightDesign {
+    left: 668px;
+    width: 100%;
+    bottom: 0px;
+  }
+}
+@media (max-width: 375px){
+  .About-Page .flex-container, .About-Page .S1H1Sizing, .About-Page .S1Container, .About-Page .Section1Paragraph{
+    max-width: 327px;
+    min-width: 327px;
+  }
+  .About-Page .Section1{
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 360px;
+    min-height: 360px;
+  }
+  .About-Page .flex-container{
+    max-height: 252px;
+    min-height: 252px;
+  }
+  .About-Page .S1H1Sizing{
+    max-height: 40px;
+    min-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .About-Page .S1Container, .About-Page .Section1Paragraph {
+    max-height: 196px;
+    min-height: 196px;
+  }
+  .About-Page .Section1Paragraph{
+    left: 24px;
+    top: 60px;
+    line-height: 28px;
+  }
+    .About-Page .S1BottomRightDesign {
+    left: 275px;
+    width: 100%;
+    top: 260px;
+  }
+}
+
 
 /* About-Page_section2 */
 
@@ -884,8 +980,10 @@ body {
 
 /* Our Clients Article */
 
-.About-Page .Our-Clients {
-  width: 1440px;
+.Our-Clients {
+  max-width: 1440px;
+  min-width: 1440px;
+  box-sizing: border-box;
   height: 437px;
   background-color: #012f34;
   display: flex;
@@ -896,55 +994,147 @@ body {
   position: relative;
 }
 
-.About-Page .section-title-container {
+.Our-Clients-Container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 67px;
+  max-width: 1110px;
 }
 
-.About-Page .section-title {
+.Our-Clients .section-title-container {
+  width: 920px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Our-Clients .section-title {
   color: #fff;
   font-family: "Livvic";
   font-size: 48px;
   font-weight: 700;
   line-height: 48px;
+  text-align: center;
 }
 
-.About-Page .client-logos-container {
+.Our-Clients .client-logos-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 100px;
-  width: 1110px;
-  height: 25px;
+  gap: 75px;
+  flex-wrap: nowrap;
+  max-width: 1110px;
+  min-width: 1110px;
+  max-height: 45px;
+  height: 45px;
+  overflow-x: hidden;
+  white-space: normal;
 }
 
-.About-Page .client-logo {
-  height: 100%;
-  width: auto;
+.Our-Clients .client-logo {
+  display: inline-block;
 }
 
-.About-Page .decorative-img {
+.Our-Clients .client-logo img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 45px ;
+}
+
+.Our-Clients .decorative-img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
+@media (max-width: 768px) {
+  .Our-Clients {
+    max-width: 768px;
+    min-width: 768px;
+    max-height: 308px;
+    min-height: 308px;
+  }
+  .Our-Clients-Container{
+    max-height: 108px;
+    max-width: 689px;
+    gap: 48px;
+  }
+
+  .Our-Clients .section-title-container{
+    max-width: 457px;
+    max-height: 32px;
+  }
+  .Our-Clients .section-title {
+    font-size: 32px;
+  }
+  
+  .Our-Clients .client-logos-container {
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-height: 28px;
+    min-height: 28px;
+    max-width: 689px;
+    min-width: 689px;
+  }
+  .Our-Clients .decorative-img {
+    top: -100px;
+    clip-path: inset(50% 0 0 0);
+  }
+}
+
+@media(max-width: 375px){
+  .Our-Clients .section-title-container{
+    max-width: 327px;
+    min-width: 327px;
+  }
+  .About-Page .Our-Clients {
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 632px;
+    min-height: 632px;
+  }
+  .Our-Clients-Container{
+    max-width: 327px;
+    min-width: 327px;
+    max-height: 456px;
+    min-height: 456px;
+    gap: 64px;
+  }
+  .About-Page .client-logos-container {
+    flex-wrap: wrap;
+    max-width: 162.21px;
+    min-width: 162.21px;
+    min-height: 360px;
+    max-height: 360px;
+  }
+
+  .About-Page .decorative-img {
+    top: -100px;
+    left: -100px;
+    clip-path: inset(50% 0 0 0);
+  }
+  .Our-Clients .section-title {
+    font-size: 32px;
+  }
+}
+
 /* Contact-page */
 .ContactSection1 {
   width: 1440px;
+  max-width: 100%;
   background-color: #014e56;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 548px;
+  overflow-x: hidden;
 }
 
 .ContactS1Container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
-}
+} 
 
 .S1Container-left {
   flex: 1;
@@ -955,26 +1145,25 @@ body {
   font-size: 64px;
   line-height: 100px;
   width: 350px;
-  position: relative;
 }
 
 .S1H3Small {
   font-family: "Livvic";
+  width: 540px;
   font-size: 32px;
   font-style: bold;
   font-weight: 700;
   line-height: 48px;
-  margin-left: 0;
 }
 
 .S1Container-left ul {
   list-style: none;
-  padding-top: 54px;
+  padding-bottom: 80px;
 }
 
 .S1Container-left ul li {
   font-family: "Livvic";
-  margin-bottom: 15px;
+  margin-top: 30px;
   color: #ffffff;
   font-style: bold;
   display: flex;
@@ -993,8 +1182,8 @@ body {
 .S1ContactLeftimg {
   position: relative;
   top: 4px;
-  left: -100px;
-  width: 200px;
+  left: -112px;
+  width: 225px;
   height: 225px;
   clip-path: inset(0 0 0 50%);
 }
@@ -1002,9 +1191,9 @@ body {
 /* Img desineje apacioje */
 .S1ContactRightimg {
   position: relative;
-  bottom: -320px;
-  right: -100px;
-  width: 200px;
+  bottom: -335px;
+  right: -111px;
+  width: 225px;
   height: 225px;
   clip-path: inset(0 50% 0 0);
 }
@@ -1014,16 +1203,17 @@ body {
   width: 100%;
   max-width: 540px;
   flex: 1;
+  padding-left: 5%;
 }
 
 .form-group {
   margin-bottom: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .form-group label::placeholder {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 5px;
   margin-left: 20px;
   color: #ffffff50;
@@ -1032,21 +1222,17 @@ body {
 .form-group input,
 .form-group textarea {
   width: 540px;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
   border-bottom: 1px solid #ffffff50;
   color: #ffffff;
   background: transparent;
   outline: none;
   resize: none;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   padding-left: 14px;
 }
-.form-group input:focus,
-.form-group textarea:focus {
-  color: #ffffff;
-  border-bottom: 1px solid #79c8c7;
-}
+ /* Perkeliau i  892 */ 
 
 .form-group input:hover,
 .form-group textarea:hover {
@@ -1056,7 +1242,7 @@ body {
 .form-group button {
   width: 123px;
   height: 48px;
-  padding: 10px 20px;
+  padding: 0;
   font-size: 16px;
   background-color: #fff;
   color: #034b5e;
@@ -1073,11 +1259,6 @@ body {
   color: #f67e7e;
 }
 
-/* .form-group input:invalid::placeholder,
-.form-group textarea.invalid::placeholder {
-  color: #F67E7E;
-    } */
-
 .error-message {
   display: none;
   color: #f67e7e;
@@ -1090,23 +1271,24 @@ body {
 .form-group input:invalid:focus {
   border-bottom: 2px solid #f67e7e;
   opacity: 1;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
-.form-group input:focus {
-  border-bottom: 1px solid #ffffff;
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #79c8c7;
   opacity: 1;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
 .form-group input:invalid {
   opacity: 0.6;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
 .form-group input {
   opacity: 0.6;
-  font-family: Livvic;
+  font-family: "Livvic";
 }
 
 .form-group input:invalid + .error-message,
@@ -1125,6 +1307,7 @@ Desktop 1440px.
 @media (max-width: 1440px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 }
 /* Tablet  */
@@ -1138,6 +1321,7 @@ Desktop 1440px.
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   /* Header */
@@ -1287,18 +1471,22 @@ Desktop 1440px.
 
   .section-3 {
     width: 100%;
-    height: 1199px;
+    height: fit-content;
   }
 
-  .flex-container_section-3 {
-    height: 1199px;
+  .flex-container_section-3{
+    height: fit-content;
+    align-items: center;
+  }
+
+  .heading-container {
+    max-width: 573px;
+    margin-top: 100px;
+    margin-left: 97px;
+    margin-right: 98px;
   }
 
   .section-3-heading {
-    width: 473px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
     color: #fff;
     text-align: center;
     font-family: Livvic;
@@ -1319,7 +1507,7 @@ Desktop 1440px.
 
   .testimonials-box {
     width: 100%;
-    padding-top: 48px;
+    padding: 48px 97px 52px 98px;
     height: auto;
     flex-direction: column;
     margin-left: 0;
@@ -1328,20 +1516,20 @@ Desktop 1440px.
   }
 
   .testimonial-card {
-    width: 573px;
+    width: 100%;
+    max-width: 573px;
+    
   }
 
   .testimonial-author {
     margin-top: 16px;
   }
 
-  .quotes-icon {
-    left: 254px;
-  }
-
   .testimonial-img {
-    margin: 16px 256px 48px;
+    margin-top: 16px;
+    margin-bottom: 48px;
   }
+  /* Secrtion-3 end */
 
   /* Article */
   .article {
@@ -1386,16 +1574,101 @@ Desktop 1440px.
     text-align: center;
   }
 
+  /* CONTACT.HTML */
+
+  .ContactSection1 {
+    width: 100%;
+    height: fit-content;
+    display: flex; 
+  }
+
+  .ContactS1Container {
+    flex: 1;
+  }
+
+  .S1Container-left {
+    width: 100%;
+  }
+
+  .ContactS1H1 {
+    font-size: 64px;
+    line-height: 56px;
+    width: auto;
+    margin-bottom: 12px;
+  }
+
+  .S1H3Small {
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .S1Container-left ul {
+    padding-top: 10px;
+    margin-bottom: 4px;
+    margin-left: -100px;
+  }
+
+  .S1Container-left ul li {
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .S1ContactLeftimg {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    clip-path: inset(0 0 0 50%)
+  }
+
+  .S1ContactRightimg {
+    position: relative;
+    width: 200px;
+    height: 225px;
+    clip-path: inset(0 50% 0 0);
+  }
+
+  .S1FormContainer {
+    font-family: "Livvic";
+    width: 100%;
+    max-width: 540px;
+    margin-left: 70px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    
+  }
+
+  .form-group input, .form-group textarea {
+    width: calc(100% - 52px);
+    max-width: 520px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .form-group button {
+    width: 100%;
+    max-width: 123px;
+    height: 48px;
+    margin-right: 390px;
+  }
+}
+  @media screen and (max-width: 768px) {
   /* Footer */
 
   .footer {
     position: relative;
-    max-width: 768;
+    max-width: 768px;
     height: 271px;
     margin-top: auto;
   }
 
   .footer-container {
+    
     display: inline-flex;
     width: 100%;
     width: 689px;
@@ -1474,8 +1747,31 @@ Desktop 1440px.
   .S1ContactRightimg {
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 83px;
+    width: 42px;
+    height: 25px;
+  }
+  .footer-contact {
+    width: 689px;
+    height: 100px;
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+    top: 56px;
     right: 0;
+  }
+  .footer-social-networks {
+    position: absolute;
+    left: 0px;
+    top:145px
+
+  }
+
+  .footer-copyright {
+    top: 145px;
   }
 }
 
@@ -1513,6 +1809,7 @@ Desktop 1440px.
   .contact-button {
     display: none;
   }
+
   .burger-menu {
     display: block;
     top: 41px;
@@ -1597,6 +1894,57 @@ Desktop 1440px.
 
   .Section2 {
     width: 100%;
+    height: 1073px;
+  }
+
+  .section2Container {
+    width: 100%;
+  }
+  
+  .S2Container {
+    width: 327px;
+    height: 945px;
+    margin: 64px 24px;
+  }
+
+  .TitleInLeft {
+    width: 240px;
+    height: 160px;
+    gap: 32px;
+  }
+
+  .S2BottomRightDesign {
+    height: 244px;
+    top: 0px;
+  }
+
+  .ListInRight {
+    width: 327px;
+    height: 199px;
+    top: 316px;
+    left: 24px;
+    gap: 48px; 
+  }
+
+  .Item1, .Item2, .Item3 {
+    width: 327px;
+    height: 199px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .Description{
+    width: 327px;
+    height: 111px;
+    gap: 10px;
+  }
+
+  /*  Section 2 */
+  /*
+  .Section2 {
+    width: 100%;
     min-height: 1073px;
     margin-top: auto;
   }
@@ -1625,22 +1973,36 @@ Desktop 1440px.
   .Description {
     flex-shrink: 1;
   }
-  .testimonial-img {
-    margin: 0;
-  }
-  /* Section 3 */
 
-  .section-3 {
-    width: 100%;
-    min-height: 1410px;
-  }
-  .section-3-heading {
-    width: 100%;
-  }
-  .testimonial-card {
-    width: 100%;
-  }
-  /* Article */
+ /* ----------Section 3---------- */
+
+ .section-3 {
+  height: fit-content;
+}
+
+.flex-container_section-3 {
+  height: fit-content;
+}
+
+.heading-container {
+  max-width: 327px;
+  margin-top: 140px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.testimonials-box {
+  padding: 48px 24px 116px 24px;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 327px;
+}
+/* ----------Section 3 end---------- */
+
+
+   /* Article */
   .article {
     width: 100%;
     height: 302px;
@@ -1652,37 +2014,10 @@ Desktop 1440px.
     width: 100%;
     left: 0%;
   }
-  .content {
-    width: 327px;
-    height: 32px;
-    top: 84px;
-    left: 24px;
-    text-align: center;
-  }
-
-  .content h1 {
-    font-size: 32px;
-    line-height: 32px;
-  }
-   .image-container {
-    top: 180px;
-    right: 568px;
-    width: 200px;
-    height: 244px;
-  }
-
-  
   .button-container {
-    width: 153px;
-    height: 48px;
-    top: 171px;
-    left: 111px;
+    width: 100%;
+    left: 0%;
   }
-
-  .button {
-    text-align: center;
-  }
-
   /* Footer */
   .footer {
     width: 100%;
@@ -1694,7 +2029,7 @@ Desktop 1440px.
   }
   .footer-contact {
     width: 100%;
-    left: 0;
+    
   }
 }
 
@@ -1737,22 +2072,16 @@ left: 98px;
 width: 107px;
 height: 25px;
 font-size: 15px;
-gap: 24px;
-
-
- 
+gap: 24px; 
 }
 
 .footer-nav-button{
 position: absolute;
  font-size: 15px;
-
-  
 }
 
 .footer-nav-about{
   left: 75px;
- 
 }
 
 .footer-nav-home{
@@ -1771,24 +2100,18 @@ line-height: 25px;
 opacity: 0.6;
 top: 145px;
 font-family: "Livvic";
-
-
 }
+
 .footer-social-networks {
 top: 240px;
 left: 120px;
 position: absolute;
-
 }
 
-.footer-copyright{
+.footer-copyright {
   display: inline;
   text-align: center;
   left: 45px;
+  top: 282px;
 }
-
-
-
-
-
 }

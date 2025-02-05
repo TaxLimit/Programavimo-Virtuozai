@@ -2043,7 +2043,7 @@ position: absolute;
   .About-Page_section2 {
     width: 100%; 
     min-height: 1219px; 
-    display: flex;
+    
     flex-direction: column; 
     align-items: center; 
     
@@ -2051,7 +2051,7 @@ position: absolute;
   }
 
   .About-Page_section2 .flex_container_4 {
-    display: flex;
+   
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -2107,6 +2107,14 @@ position: absolute;
     flex-direction: column; 
     align-items: center; 
     
+    
+  }
+  .About-Page_section2::before {
+    clip-path: inset(100.3px 0 0 0);
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
     
   }
 

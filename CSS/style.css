@@ -916,7 +916,7 @@ body {
   line-height: 25px;
   width: 302px;
   height: 25px;
-  margin-bottom: 56px;
+  margin-bottom: 84px;
 }
 .About-Page_section2 .grid h3 {
   font-size: 18px;
@@ -2086,4 +2086,135 @@ position: absolute;
   left: 45px;
   top: 282px;
 }
+}
+
+/* About section2 tablet */
+
+/* About section2 tablet */
+
+@media screen and (max-width: 768px) {
+  .About-Page_section2 {
+    width: 100%; 
+    min-height: 1219px; 
+    
+    flex-direction: column; 
+    align-items: center; 
+    
+    
+  }
+
+  .About-Page_section2 .flex_container_4 {
+   
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 573px;
+    height: 991px;
+    margin: 100px 98px 128px;
+    position: absolute;
+    
+  }
+
+  .About-Page_section2 .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 281px); 
+    gap: 72px 11px; 
+    justify-content: center; 
+    
+  }
+
+  .About-Page_section2 .About-Page_section2-heading {
+    font-size: 32px;
+    font-weight: 600; 
+    padding-top: 0px; 
+    margin-bottom: 48px;
+    text-align: center; 
+  }
+
+
+  .About-Page_section2 .grid p {
+    font-size: 15px;
+    color: #ffffff;
+    font-style: italic;
+    line-height: 25px;
+    width: 233px;
+    text-align: center; 
+  }
+
+  .About-Page_section2 .grid h3 {
+    font-size: 18px;
+    color: #79c8c7;
+    font-weight: bold; 
+    margin-top: 16px;
+    width: 233px;
+    text-align: center;
+  }
+}
+
+/* About section2 mobile */
+@media screen and (max-width: 375px) {
+  .About-Page_section2 {
+    width: 100%; 
+    min-height: 2062px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+    
+  }
+  .About-Page_section2::before {
+    clip-path: inset(100.3px 0 0 0);
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    
+  }
+
+  .About-Page_section2 .flex_container_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 327px;
+    height: 1858px;
+    margin: 88px 24px 116px;
+    position: relative;
+    
+  }
+
+  .About-Page_section2 .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 327px); 
+    gap: 52px; 
+    justify-content: center; 
+    
+  }
+
+  .About-Page_section2 .About-Page_section2-heading {
+    font-size: 32px;
+    font-weight: 600; 
+    padding-top: 0px; 
+    margin-bottom: 48px;
+    text-align: center; 
+  }
+
+
+  .About-Page_section2 .grid p {
+    font-size: 15px;
+    color: #ffffff;
+    font-style: italic;
+    line-height: 25px;
+    width: 279px;
+    text-align: center; 
+  }
+
+  .About-Page_section2 .grid h3 {
+    font-size: 18px;
+    color: #79c8c7;
+    font-weight: bold; 
+    margin-top: 16px;
+    width: 233px;
+    text-align: center;
+  }
 }

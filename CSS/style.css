@@ -156,6 +156,10 @@ body {
   align-items: center; /* Vertikalus išcentravimas */
 }
 
+.contact-button:active {
+  opacity: 0.25;
+}
+
 .social-icon:hover {
   fill: #f67e7e;
   cursor: pointer;
@@ -517,6 +521,11 @@ body {
   bottom: 76px;
   left: 1027px;
   right: 260px;
+}
+
+.button-container:active
+{
+  opacity: 0.25;
 }
 
 .image-container {
@@ -1209,6 +1218,14 @@ body {
 .form-group {
   margin-bottom: 10px;
   padding-bottom: 20px;
+}
+
+.submit-button:hover {
+  border-radius: 24px;
+  background: #79C8C7;
+}
+.form-group:active {
+  opacity: 0.25;
 }
 
 .form-group label::placeholder {

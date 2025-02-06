@@ -1136,7 +1136,6 @@ body {
   width: 1440px;
   max-width: 100%;
   background-color: #014e56;
-  overflow-x: hidden;
 }
 
 .ContactS1Container {
@@ -1192,18 +1191,14 @@ body {
   position: relative;
   top: 4px;
   left: -112px;
-  width: 225px;
-  height: 225px;
   clip-path: inset(0 0 0 50%);
 }
 
 /* Img desineje apacioje */
 .S1ContactRightimg {
   position: relative;
-  bottom: -335px;
-  right: -111px;
-  width: 225px;
-  height: 225px;
+  bottom: -310px;
+  right: -100px;
   clip-path: inset(0 50% 0 0);
 }
 /* Formos containeris */
@@ -1217,7 +1212,8 @@ body {
 
 .form-group {
   margin-bottom: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
+  margin-right: 10px;
 }
 
 .submit-button:hover {
@@ -1285,9 +1281,10 @@ body {
   line-height: 12.55px;
 }
 
-.form-group input:invalid:focus {
+.form-group input:invalid:focus,
+.form-group textarea:invalid:focus {
   border-bottom: 2px solid #f67e7e;
-  opacity: 1;
+  opacity: 0.6;
   font-family: "Livvic";
 }
 
@@ -1324,7 +1321,6 @@ Desktop 1440px.
 @media (max-width: 1440px) {
   body {
     width: 100%;
-    overflow-x: hidden;
   }
 }
 /* Tablet  */
@@ -1595,16 +1591,11 @@ Desktop 1440px.
 
   .ContactSection1 {
     width: 100%;
-    height: fit-content;
-    display: flex; 
-  }
-
-  .ContactS1Container {
-    flex: 1;
+    max-height: 1080px;
   }
 
   .S1Container-left {
-    width: 100%;
+    width: 515px;
   }
 
   .ContactS1H1 {
@@ -1617,8 +1608,7 @@ Desktop 1440px.
   .S1H3Small {
     font-size: 32px;
     line-height: 48px;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin: 15px;
   }
 
   .S1Container-left ul {
@@ -1636,15 +1626,13 @@ Desktop 1440px.
 
   .S1ContactLeftimg {
     position: relative;
-    width: 225px;
-    height: 225px;
     clip-path: inset(0 0 0 50%)
   }
 
   .S1ContactRightimg {
     position: relative;
-    width: 200px;
-    height: 225px;
+    bottom: 164px;
+    left: 671px;
     clip-path: inset(0 50% 0 0);
   }
 
@@ -1657,18 +1645,16 @@ Desktop 1440px.
   
   .form-group {
     margin-bottom: 10px;
-    
+    max-width: 540px;
   }
 
   .form-group input, .form-group textarea {
-    width: calc(100% - 52px);
     max-width: 520px;
     font-size: 14px;
     margin: 0 auto;
   }
 
   .form-group button {
-    width: 100%;
     max-width: 123px;
     height: 48px;
     margin-right: 390px;
@@ -1685,7 +1671,6 @@ Desktop 1440px.
   }
 
   .footer-container {
-    
     display: inline-flex;
     width: 100%;
     width: 689px;
@@ -1737,36 +1722,6 @@ Desktop 1440px.
   }
   .About-Page .client-logos-container {
     width: 100%;
-  }
-
-  /* CONTACT.HTML */
-
-  /* Section 1 */
-
-  .ContactSection1 {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 1;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Ensure children are stacked vertically */
-  }
-
-  .ContactS1Container {
-    width: 100%; /* Ensure children are stacked vertically */
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .S1FormContainer {
-    width: 100%;
-  }
-  .S1ContactRightimg {
-    position: absolute;
-    left: 0;
-    top: 83px;
-    width: 42px;
-    height: 25px;
   }
   .footer-contact {
     width: 689px;

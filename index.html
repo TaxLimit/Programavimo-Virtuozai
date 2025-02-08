@@ -23,8 +23,29 @@
         <a href="Pages/Contact.html"
           ><button class="nav-button contact-button">contact us</button></a
         >
-        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+
+        <img src="IMG/icon-hamburger.svg" alt="icon-hamburger" class="openbtn" onclick="openNav()">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="IMG/icon-close.svg" alt="icon-close"></a>
+          <a href="index.html" class="menu-button">home</a>
+          <a href="Pages/About.html" class="menu-button">about</a>
+          <a href="Pages/Contact.html" class="menu-button menu-contactbtn">contact us</a>
+          <img
+            class="BottomRightDesign"
+            src="IMG/bg-pattern-about-1-mobile-nav-1.svg"
+            alt="Background Pattern Bottom Right Side"
+          />
+        </div>
       </nav>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "255px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
     </header>
     <!-- Body Section 1 Dimensions:
      Width: 1440px

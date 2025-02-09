@@ -74,7 +74,7 @@
         </div>
       
         <div class="S1FormContainer">
-          <form>
+          <form id="contactForm" novalidate>
             <div class="form-group">
               <label for="name"></label>
               <input
@@ -83,18 +83,15 @@
                 name="name"
                 placeholder="Name"
                 minlength="2"
+                required
               />
-              <span class="error-message"
-                >Name is required (minimum 2 characters)</span
-              >
+              <div class="error-message">Name is required (minimum 2 characters)</div>
             </div>
 
             <div class="form-group">
               <label for="email"></label>
-              <input type="email" id="email" name="email" placeholder="Email" />
-              <span class="error-message"
-                >Please enter a valid email address</span
-              >
+              <input type="email" id="email" name="email" placeholder="Email" required />
+              <div class="error-message">This field is required</div>
             </div>
 
             <div class="form-group">
@@ -114,16 +111,40 @@
 
             <div class="form-group">
               <label for="message"></label>
-              <textarea id="message" name="message" rows="4" required maxlength="500" placeholder="Message"
-              ></textarea>
-              <span class="error-message"
-                >Message is required (maximum 500 characters)</span>
+              <textarea id="message" name="message" rows="4" required maxlength="500" placeholder="Message"></textarea>
+              <div class="error-message">Message is required (maximum 500 characters)</div>
             </div>
             <div class="form-group">
               <button type="submit" class="submit-button">submit</button>
             </div>
           </form>
           
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  let form = document.getElementById("contactForm");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    form.classList.add("submitted");
+    let valid = true;
+    let name = document.getElementById("name");
+    if (name.value === "" || name.value.length < 2) {
+      valid = false;
+    } 
+    let email = document.getElementById("email");
+    if (email.value === "") {
+      valid = false;
+    }
+    let message = document.getElementById("message");
+    if (message.value === "" || message.value.length > 500) {
+      valid = false;
+    } 
+    if (valid) {
+      form.reset();
+      form.classList.remove("submitted");
+    } 
+  });
+});
+  </script>
         </div>
         <div class="S1ContactRightimg">
           <img

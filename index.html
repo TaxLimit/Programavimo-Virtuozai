@@ -12,19 +12,22 @@
      Width: 1440px
      Height: 250px -->
     <header>
-      <nav class="navbar">
-        <img src="IMG/myteam 2.png" alt="Logo" class="logo" />
-        <a href="index.html"
-          ><button class="nav-button home-button">home</button></a
-        >
-        <a href="Pages/About.html"
-          ><button class="nav-button about-button">about</button></a
-        >
-        <a href="Pages/Contact.html"
-          ><button class="nav-button contact-button">contact us</button></a
-        >
+      <div>
+        <nav id="shadow-1" class="navbar">
+          <img src="IMG/myteam 2.png" alt="Logo" class="logo" />
+          <a href="index.html"
+            ><button class="nav-button home-button">home</button></a
+          >
+          <a href="Pages/About.html"
+            ><button class="nav-button about-button">about</button></a
+          >
+          <a href="Pages/Contact.html"
+            ><button class="nav-button contact-button">contact us</button></a
+          >
+        </nav>
 
         <img src="IMG/icon-hamburger.svg" alt="icon-hamburger" class="openbtn" onclick="openNav()">
+        
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="IMG/icon-close.svg" alt="icon-close"></a>
           <a href="index.html" class="menu-button">home</a>
@@ -36,14 +39,18 @@
             alt="Background Pattern Bottom Right Side"
           />
         </div>
-      </nav>
+      </div>
       <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "255px";
+          document.getElementById("shadow-1").style.filter = "brightness(50%)";
+          document.getElementById("shadow-2").style.filter = "brightness(50%)";
         }
         
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("shadow-1").style.filter = "none";
+          document.getElementById("shadow-2").style.filter = "none";
         }
       </script>
     </header>
@@ -54,284 +61,286 @@
      bg-pattern-home-1.svg 
      bg-pattern-home-2.svg
     -->
-    <section class="Section1">
-      <!-- Flex Container -->
-      <div class="flex-container">
-        <!-- Left Side Design -->
-        <div class="section-container">
-          <div class="S1LeftDesign">
-            <img
-              src="IMG/bg-pattern-home-1.svg"
-              alt="Background Pattern Left Side"
-            />
-          </div>
-        </div>
-        <!-- Big Text -->
-        <h1 class="Section1H1 S1H1Sizing WhiteText">
-          Find the <br />
-          best <span class="Section1H1 LightCoralHighlight">talent</span>
-        </h1>
-        <!-- Special rectangle design and Text Container -->
-        <div class="S1Container">
-          <div class="rectangle"></div>
-          <p class="Section1Paragraph S1ParagraphSizing WhiteText">
-            Finding the right people and building high performing teams can be
-            hard. Most companies aren't tapping into the abundance of global
-            talent. We're about to change that.
-          </p>
-        </div>
-      </div>
-      <!-- Bottom Right Side Design -->
-      <div class="S1BottomRightDesign">
-        <img
-          src="IMG/bg-pattern-home-2.svg"
-          alt="Background Pattern Right Side"
-        />
-      </div>
-    </section>
-
-    <!-- Body Section 2 Dimensions:
-     Width: 1440px
-     Height: 684px
-     I need:
-     icon-person.svg
-     icon-cog.svg
-     icon-chart.svg
-     bg-pattern-home-3.svg
-    -->
-    <section class="Section2">
-      <!-- Special rectangle design and Text Container -->
-      <div class="S2Container">
-        <div class="TitleInLeft">
-          <div class="rectangle2"></div>
-          <p class="Title">
-            Build & manage distributed teams like no one else.
-          </p>
-        </div>
-
-        <div class="ListInRight">
-          <div class="Item1">
-            <img
-              class="sizeOfIcon"
-              src="IMG/icon-person.svg"
-              alt="Icon of Person"
-            />
-            <div class="Description">
-              <p>Experienced Individuals</p>
-              <p>
-                Our network is made up of highly experienced professionals who
-                are passionate about what they do.
-              </p>
+    <div id="shadow-2">
+      <section class="Section1">
+        <!-- Flex Container -->
+        <div class="flex-container">
+          <!-- Left Side Design -->
+          <div class="section-container">
+            <div class="S1LeftDesign">
+              <img
+                src="IMG/bg-pattern-home-1.svg"
+                alt="Background Pattern Left Side"
+              />
             </div>
           </div>
-
-          <div class="Item2">
-            <img class="sizeOfIcon" src="IMG/icon-cog.svg" alt="Icon of Cog" />
-            <div class="Description">
-              <p>Easy to Implement</p>
-              <p>
-                Our processes have been refined over years of implementation
-                meaning our teams always deliver.
-              </p>
-            </div>
-          </div>
-
-          <div class="Item3">
-            <img
-              class="sizeOfIcon"
-              src="IMG/icon-chart.svg"
-              alt="Icon of Chart"
-            />
-            <div class="Description">
-              <p>Enhanced Productivity</p>
-              <p>
-                Our customized platform with in-built analytics helps you manage
-                your distributed teams.
-              </p>
-            </div>
+          <!-- Big Text -->
+          <h1 class="Section1H1 S1H1Sizing WhiteText">
+            Find the <br />
+            best <span class="Section1H1 LightCoralHighlight">talent</span>
+          </h1>
+          <!-- Special rectangle design and Text Container -->
+          <div class="S1Container">
+            <div class="rectangle"></div>
+            <p class="Section1Paragraph S1ParagraphSizing WhiteText">
+              Finding the right people and building high performing teams can be
+              hard. Most companies aren't tapping into the abundance of global
+              talent. We're about to change that.
+            </p>
           </div>
         </div>
-
-        <div class="S2BottomRightDesign">
-          <!-- Bottom Right Side Design -->
+        <!-- Bottom Right Side Design -->
+        <div class="S1BottomRightDesign">
           <img
-            src="IMG/bg-pattern-home-3.svg"
+            src="IMG/bg-pattern-home-2.svg"
             alt="Background Pattern Right Side"
           />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Desktop Body Section 3 starts here (down) -->
-    <section class="section-3">
-      <div class="bg-pattern-home-4">
-        <img
-          src="IMG/bg-pattern-home-4-about-3.svg"
-          alt="Decorative background pattern"
-        />
-      </div>
-
-      <div class="flex-container_section-3">
-        <div class="heading-container">
-          <h3 class="section-3-heading">
-            Delivering real results for top companies. Some of our <span class="highlight-success-stories">success stories.</span>
-          </h3>
-        </div>
-        <div class="testimonials-box">
-          <div class="testimonial-card">
-            <div class="quotes-icon">
-              <img src="IMG/icon-quotes.svg" alt="Icon of quotes" />
-            </div>
-            <p class="testimonial-text">
-              “The team perfectly fit the specialized skill set required. They
-              focused on the most essential features helping us launch the
-              platform eight months faster than planned.”
+      <!-- Body Section 2 Dimensions:
+      Width: 1440px
+      Height: 684px
+      I need:
+      icon-person.svg
+      icon-cog.svg
+      icon-chart.svg
+      bg-pattern-home-3.svg
+      -->
+      <section class="Section2">
+        <!-- Special rectangle design and Text Container -->
+        <div class="S2Container">
+          <div class="TitleInLeft">
+            <div class="rectangle2"></div>
+            <p class="Title">
+              Build & manage distributed teams like no one else.
             </p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-name">Kady Baker</div>
-              <div class="testimonial-author-credentials">
-                Product Manager at Bookmark
-              </div>
+          </div>
+
+          <div class="ListInRight">
+            <div class="Item1">
               <img
-                class="testimonial-img"
-                src="IMG/avatar-kady.jpg"
-                alt="Picture of testimonial author Kady Baker"
+                class="sizeOfIcon"
+                src="IMG/icon-person.svg"
+                alt="Icon of Person"
               />
+              <div class="Description">
+                <p>Experienced Individuals</p>
+                <p>
+                  Our network is made up of highly experienced professionals who
+                  are passionate about what they do.
+                </p>
+              </div>
+            </div>
+
+            <div class="Item2">
+              <img class="sizeOfIcon" src="IMG/icon-cog.svg" alt="Icon of Cog" />
+              <div class="Description">
+                <p>Easy to Implement</p>
+                <p>
+                  Our processes have been refined over years of implementation
+                  meaning our teams always deliver.
+                </p>
+              </div>
+            </div>
+
+            <div class="Item3">
+              <img
+                class="sizeOfIcon"
+                src="IMG/icon-chart.svg"
+                alt="Icon of Chart"
+              />
+              <div class="Description">
+                <p>Enhanced Productivity</p>
+                <p>
+                  Our customized platform with in-built analytics helps you manage
+                  your distributed teams.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="testimonial-card">
-            <div class="quotes-icon">
-              <img src="IMG/icon-quotes.svg" alt="Icon of quotes" />
-            </div>
-            <p class="testimonial-text">
-              “We needed to automate our entire onboarding process. The team
-              came in and built out the whole journey. Since going live, user
-              retention has gone through the roof!”
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-name">Aiysha Reese</div>
-              <div class="testimonial-author-credentials">
-                Founder of Manage
-              </div>
-              <img
-                class="testimonial-img"
-                src="IMG/avatar-aiysha.jpg"
-                alt="Picture of testimonial author Aiysha Reese"
-              />
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="quotes-icon">
-              <img src="IMG/icon-quotes.svg" alt="Icon of quotes" />
-            </div>
-            <p class="testimonial-text">
-              “Amazing. Our team helped us build an app that delivered a new
-              experience for hiring a physio. The launch was an instant success
-              with 100k downloads in the first month.”
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-name">Arthur Clarke</div>
-              <div class="testimonial-author-credentials">
-                Co-founder of MyPhysio
-              </div>
-              <img
-                class="testimonial-img"
-                src="IMG/avatar-arthur.jpg"
-                alt="Picture of testimonial author Arthur Clarke"
-              />
-            </div>
+
+          <div class="S2BottomRightDesign">
+            <!-- Bottom Right Side Design -->
+            <img
+              src="IMG/bg-pattern-home-3.svg"
+              alt="Background Pattern Right Side"
+            />
           </div>
         </div>
-      </div>
-      <div class="bg-pattern-home-5">
-        <img
-          src="IMG/bg-pattern-home-5.svg"
-          alt="Decorative background pattern"
-        />
-      </div>
-    </section>
-    <!-- Desktop Body Section 3 ends here (up) -->
-    <!-- Article Ready to get started, start -->
-    <article class="article">
-      <div class="mask">
-        <div class="image-container">
+      </section>
+
+      <!-- Desktop Body Section 3 starts here (down) -->
+      <section class="section-3">
+        <div class="bg-pattern-home-4">
           <img
-            src="IMG/bg-pattern-home-6-about-5.svg"
-            alt="Decorative Semi-circle"
+            src="IMG/bg-pattern-home-4-about-3.svg"
+            alt="Decorative background pattern"
           />
         </div>
-        <div class="content">
-          <h1>Ready to get started?</h1>
-        </div>
-        <div class="button-container">
-          <a href="Pages/Contact.html" class="button">contact us</a>
-        </div>
-      </div>
-    </article>
-    <!-- Article Ready to get started, end -->
-    <footer class="footer">
-      <div class="footer-container">
-        <img src="IMG/myteam 2.png" alt="MyTeam Logo" class="footer-logo" />
-        <div class="footer-nav-buttons">
-          <a href="index.html"
-            ><button class="footer-nav-button footer-nav-home">home</button></a
-          >
-          <a href="Pages/About.html"
-            ><button class="footer-nav-button footer-nav-about">
-              about
-            </button></a
-          >
-        </div>
-        <div class="footer-contact">
-          987 Hillcrest Lane<br />
-          Irvine, CA<br />
-          California 92714<br />
-          Call Us : 949-833-7432
-        </div>
-        <div class="footer-social-networks">
-          <!-- Facebook ikonėlė -->
-          <svg
-            class="social-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-          >
-            <path
-              d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
-              fill="currentColor"
-            />
-          </svg>
-          <!-- Pinterest ikonėlė -->
-          <svg
-            class="social-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 25 24"
-            width="24"
-            height="24"
-          >
-            <path
-              d="M12 0C5.373 0 0 5.373 0 12C0 17.28 3.438 21.697 8.104 23.245C8.034 22.615 8 21.844 8.19 21.134L9.404 16.602C9.404 16.602 8.976 15.707 8.976 14.6C8.976 12.823 10.03 11.639 11.467 11.639C12.77 11.639 13.148 12.792 13.148 13.763C13.148 14.823 12.563 16.308 12.214 17.541C11.82 19.011 13.008 20.06 14.477 20.06C16.893 20.06 18.768 17.828 18.768 14.613C18.768 11.594 16.683 9.276 13.4 9.276C10.287 9.276 8.145 11.485 8.145 14.257C8.145 15.359 8.462 16.248 8.938 16.976C8.988 17.065 8.998 17.172 8.978 17.273L8.639 18.737C8.597 18.935 8.49 18.982 8.304 18.887C6.613 18.047 5.698 16.135 5.698 14.231C5.698 9.997 8.966 6.25 13.4 6.25C17.88 6.25 21.25 9.654 21.25 14.297C21.25 18.92 18.006 23 13.437 23C11.374 23 9.8 22.152 8.854 21.056C8.55 22.217 7.91 23.45 7.56 24C9.164 24.516 10.921 24.75 12.75 24.75C19.627 24.75 25 19.377 25 12.5C25 5.623 19.627 0.25 12.75 0.25Z"
-              fill="currentColor"
-            />
-          </svg>
 
-          <!-- Twitter ikonėlė -->
-          <svg
-            class="social-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-          >
-            <path
-              d="M24 4.557C23.117 4.949 22.168 5.213 21.172 5.332C22.189 4.723 22.97 3.758 23.337 2.608C22.386 3.172 21.332 3.582 20.21 3.803C19.313 2.846 18.032 2.248 16.616 2.248C13.437 2.248 11.101 5.214 11.819 8.293C7.728 8.088 4.1 6.128 1.671 3.149C0.381 5.362 1.002 8.257 3.194 9.723C2.388 9.697 1.628 9.476 0.965 9.107C0.911 11.389 2.546 13.523 4.914 13.998C4.221 14.186 3.462 14.23 2.69 14.082C3.316 16.038 5.134 17.461 7.29 17.501C5.22 19.124 2.612 19.849 0 19.541C2.179 20.938 4.768 21.753 7.548 21.753C16.69 21.753 21.855 14.032 21.543 7.106C22.505 6.411 23.34 5.544 24 4.557Z"
-              fill="currentColor"
-            />
-          </svg>
+        <div class="flex-container_section-3">
+          <div class="heading-container">
+            <h3 class="section-3-heading">
+              Delivering real results for top companies. Some of our <span class="highlight-success-stories">success stories.</span>
+            </h3>
+          </div>
+          <div class="testimonials-box">
+            <div class="testimonial-card">
+              <div class="quotes-icon">
+                <img src="IMG/icon-quotes.svg" alt="Icon of quotes" />
+              </div>
+              <p class="testimonial-text">
+                “The team perfectly fit the specialized skill set required. They
+                focused on the most essential features helping us launch the
+                platform eight months faster than planned.”
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">Kady Baker</div>
+                <div class="testimonial-author-credentials">
+                  Product Manager at Bookmark
+                </div>
+                <img
+                  class="testimonial-img"
+                  src="IMG/avatar-kady.jpg"
+                  alt="Picture of testimonial author Kady Baker"
+                />
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="quotes-icon">
+                <img src="IMG/icon-quotes.svg" alt="Icon of quotes" />
+              </div>
+              <p class="testimonial-text">
+                “We needed to automate our entire onboarding process. The team
+                came in and built out the whole journey. Since going live, user
+                retention has gone through the roof!”
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">Aiysha Reese</div>
+                <div class="testimonial-author-credentials">
+                  Founder of Manage
+                </div>
+                <img
+                  class="testimonial-img"
+                  src="IMG/avatar-aiysha.jpg"
+                  alt="Picture of testimonial author Aiysha Reese"
+                />
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="quotes-icon">
+                <img src="IMG/icon-quotes.svg" alt="Icon of quotes" />
+              </div>
+              <p class="testimonial-text">
+                “Amazing. Our team helped us build an app that delivered a new
+                experience for hiring a physio. The launch was an instant success
+                with 100k downloads in the first month.”
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">Arthur Clarke</div>
+                <div class="testimonial-author-credentials">
+                  Co-founder of MyPhysio
+                </div>
+                <img
+                  class="testimonial-img"
+                  src="IMG/avatar-arthur.jpg"
+                  alt="Picture of testimonial author Arthur Clarke"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer-copyright">Copyright 2020. All Rights Reserved</div>
-      </div>
-    </footer>
+        <div class="bg-pattern-home-5">
+          <img
+            src="IMG/bg-pattern-home-5.svg"
+            alt="Decorative background pattern"
+          />
+        </div>
+      </section>
+      <!-- Desktop Body Section 3 ends here (up) -->
+      <!-- Article Ready to get started, start -->
+      <article class="article">
+        <div class="mask">
+          <div class="image-container">
+            <img
+              src="IMG/bg-pattern-home-6-about-5.svg"
+              alt="Decorative Semi-circle"
+            />
+          </div>
+          <div class="content">
+            <h1>Ready to get started?</h1>
+          </div>
+          <div class="button-container">
+            <a href="Pages/Contact.html" class="button">contact us</a>
+          </div>
+        </div>
+      </article>
+      <!-- Article Ready to get started, end -->
+      <footer class="footer">
+        <div class="footer-container">
+          <img src="IMG/myteam 2.png" alt="MyTeam Logo" class="footer-logo" />
+          <div class="footer-nav-buttons">
+            <a href="index.html"
+              ><button class="footer-nav-button footer-nav-home">home</button></a
+            >
+            <a href="Pages/About.html"
+              ><button class="footer-nav-button footer-nav-about">
+                about
+              </button></a
+            >
+          </div>
+          <div class="footer-contact">
+            987 Hillcrest Lane<br />
+            Irvine, CA<br />
+            California 92714<br />
+            Call Us : 949-833-7432
+          </div>
+          <div class="footer-social-networks">
+            <!-- Facebook ikonėlė -->
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+                fill="currentColor"
+              />
+            </svg>
+            <!-- Pinterest ikonėlė -->
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 24"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12C0 17.28 3.438 21.697 8.104 23.245C8.034 22.615 8 21.844 8.19 21.134L9.404 16.602C9.404 16.602 8.976 15.707 8.976 14.6C8.976 12.823 10.03 11.639 11.467 11.639C12.77 11.639 13.148 12.792 13.148 13.763C13.148 14.823 12.563 16.308 12.214 17.541C11.82 19.011 13.008 20.06 14.477 20.06C16.893 20.06 18.768 17.828 18.768 14.613C18.768 11.594 16.683 9.276 13.4 9.276C10.287 9.276 8.145 11.485 8.145 14.257C8.145 15.359 8.462 16.248 8.938 16.976C8.988 17.065 8.998 17.172 8.978 17.273L8.639 18.737C8.597 18.935 8.49 18.982 8.304 18.887C6.613 18.047 5.698 16.135 5.698 14.231C5.698 9.997 8.966 6.25 13.4 6.25C17.88 6.25 21.25 9.654 21.25 14.297C21.25 18.92 18.006 23 13.437 23C11.374 23 9.8 22.152 8.854 21.056C8.55 22.217 7.91 23.45 7.56 24C9.164 24.516 10.921 24.75 12.75 24.75C19.627 24.75 25 19.377 25 12.5C25 5.623 19.627 0.25 12.75 0.25Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <!-- Twitter ikonėlė -->
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M24 4.557C23.117 4.949 22.168 5.213 21.172 5.332C22.189 4.723 22.97 3.758 23.337 2.608C22.386 3.172 21.332 3.582 20.21 3.803C19.313 2.846 18.032 2.248 16.616 2.248C13.437 2.248 11.101 5.214 11.819 8.293C7.728 8.088 4.1 6.128 1.671 3.149C0.381 5.362 1.002 8.257 3.194 9.723C2.388 9.697 1.628 9.476 0.965 9.107C0.911 11.389 2.546 13.523 4.914 13.998C4.221 14.186 3.462 14.23 2.69 14.082C3.316 16.038 5.134 17.461 7.29 17.501C5.22 19.124 2.612 19.849 0 19.541C2.179 20.938 4.768 21.753 7.548 21.753C16.69 21.753 21.855 14.032 21.543 7.106C22.505 6.411 23.34 5.544 24 4.557Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div class="footer-copyright">Copyright 2020. All Rights Reserved</div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

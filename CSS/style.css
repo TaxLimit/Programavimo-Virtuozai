@@ -2282,3 +2282,88 @@ position: absolute;
     text-align: center;
   }
 }
+
+/* Contact us */
+
+@media screen and (max-width: 375px) {
+  .ContactSection1 {
+    width: 375px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  .ContactS1Container {
+    max-height: 1030px;
+  } 
+
+  .S1Container-left {
+    width: 375px;
+    align-items: center;
+  }
+
+  .ContactS1H1 {
+    font-size: 40px;
+    line-height: 40px;
+    width: 327px;
+    height: 40px;
+    margin-bottom: 12px;
+    text-align: center; 
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .S1H3Small {
+    text-align: center;
+    width: 200px;
+    height: 48px;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 87.5px;
+    margin-right: 87.5px;
+  }
+
+  .S1Container-left ul {
+    padding: 20px;
+    margin: 4px;
+  }
+
+  .S1Container-left ul li {
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .S1ContactLeftimg {
+    display: none;
+  }
+
+  .S1ContactRightimg {
+    position: relative;
+    bottom: 44px;
+    left: 274px;
+    clip-path: inset(0 50% 50% 0);
+  }
+
+  .S1FormContainer {
+    margin: 0;
+    font-family: "Livvic";
+    max-width: 375px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    width: 325px;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 325px;
+    font-size: 14px;
+  }
+
+  .form-group button {
+    max-width: 123px;
+    height: 48px;
+    padding-bottom: -100px;
+  }
+}

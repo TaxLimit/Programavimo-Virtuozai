@@ -94,15 +94,59 @@
                   >Name is required (minimum 2 characters)</span
                 >
               </div>
+ <div class="ContactS1Container">
+        <div class="S1ContactLeftimg">
+          <img
+            src="../IMG/bg-pattern-about-2-contact-1.svg"
+            alt="Background Pattern Left Side"
+          />
+        </div>
+        <div class="S1Container-left">
+          <h1 class="ContactS1H1 WhiteText">Contact</h1>
+          <h2 class="S1H3Small LightCoralHighlight">Ask us about</h2>
+          <ul>
+            <li>
+              <img src="../IMG/icon-person.svg" alt="Person" />
+              The quality of our talent network
+            </li>
+            <li>
+              <img src="../IMG/icon-cog.svg" alt="Cog" />
+              Usage & implementation of our software
+            </li>
+            <li>
+              <img src="../IMG/icon-chart.svg" alt="Icon" />
+              How we help drive innovation
+            </li>
+          </ul>
+        </div>
+      
+        <div class="S1FormContainer">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name"></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                minlength="2"
+                required
+              />
+              <div class="error-message">Name is required (minimum 2 characters)</div>
+            </div>
 
-              <div class="form-group">
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Email" required />
+              <div class="error-message">This field is required</div>
+            </div>
+            <div class="form-group">
                 <label for="email"></label>
                 <input type="email" id="email" name="email" placeholder="Email" />
                 <span class="error-message"
                   >Please enter a valid email address</span
                 >
               </div>
-
               <div class="form-group">
                 <label for="company"></label>
                 <input
@@ -117,32 +161,55 @@
                 <label for="title"></label>
                 <input type="text" id="title" name="title" placeholder="Title" />
               </div>
-
-              <div class="form-group">
-                <label for="message"></label>
-                <textarea id="message" name="message" rows="4" required maxlength="500" placeholder="Message"
-                ></textarea>
-                <span class="error-message"
-                  >Message is required (maximum 500 characters)</span>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="submit-button">submit</button>
-              </div>
-            </form>
-            
-          </div>
-          <div class="S1ContactRightimg">
-            <img
-              src="../IMG/bg-pattern-contact-2.svg"
-              alt="Background Pattern Right Side"
-            />
-          </div>
-          </div>
-        
-        
-        
-      </section>
-      <footer class="footer">
+<div class="form-group">
+              <label for="message"></label>
+              <textarea id="message" name="message" rows="4" required maxlength="500" placeholder="Message"></textarea>
+              <div class="error-message">Message is required (maximum 500 characters)</div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-button">submit</button>
+            </div>
+          </form>
+          
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  let form = document.getElementById("contactForm");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    form.classList.add("submitted");
+    let valid = true;
+    let name = document.getElementById("name");
+    if (name.value === "" || name.value.length < 2) {
+      valid = false;
+    } 
+    let email = document.getElementById("email");
+    if (email.value === "") {
+      valid = false;
+    }
+    let message = document.getElementById("message");
+    if (message.value === "" || message.value.length > 500) {
+      valid = false;
+    } 
+    if (valid) {
+      form.reset();
+      form.classList.remove("submitted");
+    } 
+  });
+});
+  </script>
+        </div>
+        <div class="S1ContactRightimg">
+          <img
+            src="../IMG/bg-pattern-contact-2.svg"
+            alt="Background Pattern Right Side"
+          />
+        </div>
+        </div>
+      
+      
+      
+    </section>           
+     <footer class="footer">
         <div class="footer-container">
           <img src="../IMG/myteam 2.png" alt="MyTeam Logo" class="footer-logo" />
           <div class="footer-nav-buttons">

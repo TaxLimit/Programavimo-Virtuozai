@@ -1238,13 +1238,15 @@ body {
   width: 540px;
   font-size: 15px;
   border: none;
-  border-bottom: 1px solid #ffffff50;
+  border-bottom: 1px solid #fff;
   color: #ffffff;
   background: transparent;
   outline: none;
   resize: none;
   padding-bottom: 20px;
   padding-left: 14px;
+  opacity: 0.6;
+  font-family: "Livvic";
 }
 /* Perkeliau i  892 */
 
@@ -1267,10 +1269,21 @@ body {
   border: 2px;
   margin-top: 10px;
 }
-.form-group input:invalid,
-.form-group textarea:invalid {
-  border-bottom: 1px solid #f67e7e;
-  color: #f67e7e;
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #ffffff50;
+  box-shadow: 0 0 0px 1000px #014e56 inset;
+  -webkit-text-fill-color: #fff;
+}
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+  border-bottom: 1px solid #79C8C7;
+  -webkit-text-fill-color: #fff;
 }
 
 .error-message {
@@ -1282,32 +1295,31 @@ body {
   line-height: 12.55px;
 }
 
-.form-group input:invalid:focus,
-.form-group textarea:invalid:focus {
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid #79C8C7;
+  color: #FFF;
+  font-family: "Livvic";
+}
+
+form.submitted input:invalid,
+form.submitted textarea:invalid {
+  border-bottom: 2px solid #f67e7e;
+  opacity: 1;
+  font-family: "Livvic";
+  color: #F67E7E;
+}
+
+form.submitted input:invalid:focus,
+form.submitted textarea:invalid:focus {
   border-bottom: 2px solid #f67e7e;
   opacity: 0.6;
   font-family: "Livvic";
+  color: #F67E7E;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-bottom: 1px solid #79c8c7;
-  opacity: 1;
-  font-family: "Livvic";
-}
-
-.form-group input:invalid {
-  opacity: 0.6;
-  font-family: "Livvic";
-}
-
-.form-group input {
-  opacity: 0.6;
-  font-family: "Livvic";
-}
-
-.form-group input:invalid + .error-message,
-.form-group textarea:invalid + .error-message {
+form.submitted input:invalid ~ .error-message,
+form.submitted textarea:invalid ~ .error-message {
   display: block;
 }
 

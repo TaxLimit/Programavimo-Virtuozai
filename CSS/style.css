@@ -1136,13 +1136,14 @@ body {
 .ContactSection1 {
   width: 1440px;
   background-color: #014e56;
-  height: 570px;
+  position: relative;
 }
 
 .ContactS1Container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  position: relative;
 }
 
 .S1Container-left {
@@ -1649,8 +1650,8 @@ Desktop 1440px.
   }
 
   .S1ContactRightimg {
-    position: relative;
-    bottom: 144px;
+    position: absolute;
+    bottom: -4px;
     left: 671px;
     clip-path: inset(0 50% 0 0);
   }
@@ -2292,7 +2293,6 @@ Desktop 1440px.
     display: flex;
     flex-direction: column; 
     align-items: center;
-    max-height: 1072px;
   }
 
   .S1Container-left {
@@ -2340,8 +2340,8 @@ Desktop 1440px.
   }
 
   .S1ContactRightimg {
-    position: relative;
-    bottom: 44px;
+    position: absolute;
+    bottom: -114px;
     left: 274px;
     clip-path: inset(0 50% 50% 0);
   }

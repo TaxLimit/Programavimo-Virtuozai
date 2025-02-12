@@ -1137,6 +1137,7 @@ body {
   width: 1440px;
   max-width: 100%;
   background-color: #014e56;
+  height: 600px;
 }
 
 .ContactS1Container {
@@ -1147,6 +1148,7 @@ body {
 
 .S1Container-left {
   flex: 1;
+  width: 540px;
 }
 
 .ContactS1H1 {
@@ -1154,6 +1156,7 @@ body {
   font-size: 64px;
   line-height: 100px;
   width: 350px;
+  margin-bottom: 18px;
 }
 
 .S1H3Small {
@@ -1166,6 +1169,7 @@ body {
 }
 
 .S1Container-left ul {
+  margin-top: 54px;
   list-style: none;
   padding-bottom: 80px;
 }
@@ -1179,6 +1183,7 @@ body {
   align-items: center;
   font-size: 18px;
   line-height: 28px;
+  width: 445px;
 }
 
 .S1Container-left ul li img {
@@ -1198,7 +1203,7 @@ body {
 /* Img desineje apacioje */
 .S1ContactRightimg {
   position: relative;
-  bottom: -310px;
+  bottom: -376px;
   right: -100px;
   clip-path: inset(0 50% 0 0);
 }
@@ -1208,7 +1213,7 @@ body {
   width: 100%;
   max-width: 540px;
   flex: 1;
-  padding-left: 5%;
+  
 }
 
 .form-group {
@@ -1248,7 +1253,6 @@ body {
   opacity: 0.6;
   font-family: "Livvic";
 }
-/* Perkeliau i  892 */
 
 .form-group input:hover,
 .form-group textarea:hover {
@@ -1603,11 +1607,15 @@ Desktop 1440px.
 
   .ContactSection1 {
     width: 100%;
-    max-height: 1080px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 1185px;
   }
 
   .S1Container-left {
     width: 515px;
+    flex: 1;
   }
 
   .ContactS1H1 {
@@ -1643,7 +1651,7 @@ Desktop 1440px.
 
   .S1ContactRightimg {
     position: relative;
-    bottom: 164px;
+    bottom: 144px;
     left: 671px;
     clip-path: inset(0 50% 0 0);
   }
@@ -1652,7 +1660,7 @@ Desktop 1440px.
     font-family: "Livvic";
     width: 100%;
     max-width: 540px;
-    margin-left: 70px;
+    margin-left: 90px;
   }
 
   .form-group {
@@ -2285,10 +2293,8 @@ Desktop 1440px.
     display: flex;
     flex-direction: column; 
     align-items: center;
+    max-height: 1058px;
   }
-  .ContactS1Container {
-    max-height: 1030px;
-  } 
 
   .S1Container-left {
     width: 375px;
@@ -2319,6 +2325,7 @@ Desktop 1440px.
   .S1Container-left ul {
     padding: 20px;
     margin: 4px;
+    
   }
 
   .S1Container-left ul li {
@@ -2326,6 +2333,7 @@ Desktop 1440px.
     line-height: 24px;
     align-items: center;
     margin-bottom: 16px;
+    width: fit-content;
   }
 
   .S1ContactLeftimg {
@@ -2340,7 +2348,7 @@ Desktop 1440px.
   }
 
   .S1FormContainer {
-    margin: 0;
+    margin-left: 22px;
     font-family: "Livvic";
     max-width: 375px;
   }

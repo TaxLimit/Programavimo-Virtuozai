@@ -1140,6 +1140,7 @@ body {
 .ContactSection1 {
   width: 1440px;
   background-color: #014e56;
+  height: 570px;
   position: relative;
 }
 
@@ -1147,11 +1148,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  position: relative;
 }
 
 .S1Container-left {
-  flex: 1;
+  /*flex: 1;*/
   width: 540px;
 }
 
@@ -1160,7 +1160,7 @@ body {
   font-size: 64px;
   line-height: 100px;
   width: 350px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .S1H3Small {
@@ -1173,14 +1173,14 @@ body {
 }
 
 .S1Container-left ul {
-  margin-top: 54px;
+  margin-top: 32px;
   list-style: none;
   padding-bottom: 80px;
 }
 
 .S1Container-left ul li {
   font-family: "Livvic";
-  margin-top: 30px;
+  margin-top: 8px;
   color: #ffffff;
   font-style: bold;
   display: flex;
@@ -1206,8 +1206,8 @@ body {
 
 /* Img desineje apacioje */
 .S1ContactRightimg {
-  position: relative;
-  bottom: -346px;
+  position: absolute;
+  bottom: -4px;
   right: -100px;
   clip-path: inset(0 50% 0 0);
 }
@@ -1221,8 +1221,8 @@ body {
 }
 
 .form-group {
-  margin-bottom: 3px;
-  padding-bottom: 16px;
+  /*margin-bottom: 3px;*/
+  padding-bottom: 24px;
   margin-right: 10px;
 }
 
@@ -1246,6 +1246,7 @@ body {
 .form-group textarea {
   width: 540px;
   font-size: 15px;
+  line-height: 20px;
   border: none;
   border-bottom: 1px solid #fff;
   color: #ffffff;
@@ -1313,7 +1314,7 @@ textarea:focus {
 form.submitted input:invalid,
 form.submitted textarea:invalid {
   border-bottom: 2px solid #f67e7e;
-  opacity: 1;
+  opacity: 0.6;
   font-family: "Livvic";
   color: #F67E7E;
 }
@@ -1614,12 +1615,12 @@ Desktop 1440px.
     display: flex;
     flex-direction: column; 
     align-items: center;
-    height: 1235px;
+    height: 1110px;
   }
 
   .S1Container-left {
-    width: 515px;
-    flex: 1;
+    width: 248px;
+    /*flex: 1;*/
   }
 
   .ContactS1H1 {
@@ -1656,7 +1657,7 @@ Desktop 1440px.
   .S1ContactRightimg {
     position: absolute;
     bottom: -4px;
-    left: 671px;
+    right: -100px;
     clip-path: inset(0 50% 0 0);
   }
 
@@ -2294,6 +2295,7 @@ Desktop 1440px.
 @media screen and (max-width: 375px) {
   .ContactSection1 {
     width: 375px;
+    height: 1010px;;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -2345,8 +2347,8 @@ Desktop 1440px.
 
   .S1ContactRightimg {
     position: absolute;
-    bottom: -114px;
-    left: 274px;
+    bottom: -116.5px;
+    right: -100px;
     clip-path: inset(0 50% 50% 0);
   }
 

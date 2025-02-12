@@ -76,76 +76,78 @@
               </li>
             </ul>
           </div>
-        
-        <div class="S1FormContainer">
-          <form id="contactForm" novalidate>
-              <div class="form-group">
-              <label for="name"></label>
-              <input type="text" id="name" name="name" placeholder="Name" minlength="2" required/>
-              <div class="error-message">Name is required (minimum 2 characters)</div>
-            </div>
-              <div class="form-group">
-              <label for="email"></label>
-              <input type="email" id="email" name="email" placeholder="Email" required />
-              <div class="error-message">This field is required</div>
-            </div>
-              <div class="form-group">
+          <div class="S1FormContainer">
+            <form id="contactForm" novalidate>
+              <div>
+                <div class="form-group">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name" minlength="2" required/>
+                <div class="error-message">Name is required (minimum 2 characters)</div>
+              </div>
+              <div>
+                <div class="form-group">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required />
+                <div class="error-message">This field is required</div>
+              </div>
+              <!--<div class="form-group">
                 <label for="email"></label>
                 <input type="email" id="email" name="email" placeholder="Email" />
                 <span class="error-message">Please enter a valid email address</span>
-            </div>
+              </div>
+              -->
               <div class="form-group">
                 <label for="company"></label>
                 <input type="text" id="company" name="company" placeholder="Company Name"/>
-            </div>
+              </div>
               <div class="form-group">
                 <label for="title"></label>
                 <input type="text" id="title" name="title" placeholder="Title" />
-            </div>
+              </div>
               <div class="form-group">
-              <label for="message"></label>
-              <textarea id="message" name="message" rows="5" required maxlength="500" placeholder="Message"></textarea>
-              <div class="error-message">Message is required (maximum 500 characters)</div>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="submit-button">submit</button>
-            </div>
-          </form>     
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  let form = document.getElementById("contactForm");
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    form.classList.add("submitted");
-    let valid = true;
-    let name = document.getElementById("name");
-    if (name.value === "" || name.value.length < 2) {
-      valid = false;
-    } 
-    let email = document.getElementById("email");
-    if (email.value === "" || !email.value.includes("@") || !email.value.includes(".")) {
-      valid = false;
-    }
-    let message = document.getElementById("message");
-    if (message.value === "" || message.value.length > 500) {
-      valid = false;
-    } 
-    if (valid) {
-      form.reset();
-      form.classList.remove("submitted");
-    } 
-  });
-});
-  </script>
-        </div>
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="5" required maxlength="500" placeholder="Message"></textarea>
+                <div class="error-message">Message is required (maximum 500 characters)</div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="submit-button">submit</button>
+              </div>
+            </form>
+          </div>
+        </div>     
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            let form = document.getElementById("contactForm");
+            form.addEventListener("submit", function (event) {
+              event.preventDefault();
+              form.classList.add("submitted");
+              let valid = true;
+              let name = document.getElementById("name");
+              if (name.value === "" || name.value.length < 2) {
+                valid = false;
+              } 
+              let email = document.getElementById("email");
+              if (email.value === "" || !email.value.includes("@") || !email.value.includes(".")) {
+                valid = false;
+              }
+              let message = document.getElementById("message");
+              if (message.value === "" || message.value.length > 500) {
+                valid = false;
+              } 
+              if (valid) {
+                form.reset();
+                form.classList.remove("submitted");
+              } 
+            });
+          });
+        </script>  
         <div class="S1ContactRightimg">
           <img
             src="../IMG/bg-pattern-contact-2.svg"
-            alt="Background Pattern Right Side"/>
+            alt="Background Pattern Right Side"
+          />
         </div>
-      </div> 
-    </div>
-    </section>           
+      </section>           
      <footer class="footer">
         <div class="footer-container">
           <img src="../IMG/myteam 2.png" alt="MyTeam Logo" class="footer-logo" />
@@ -153,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="../index.html"
               ><button class="footer-nav-button footer-nav-home">home</button></a
             >
-            <a href="../Pages/Contact.html"
+            <a href="../Pages/About.html"
               ><button class="footer-nav-button footer-nav-about">
                 about
               </button></a

@@ -1135,9 +1135,8 @@ body {
 /* Contact-page */
 .ContactSection1 {
   width: 1440px;
-  max-width: 100%;
   background-color: #014e56;
-  height: 600px;
+  height: 570px;
 }
 
 .ContactS1Container {
@@ -1203,7 +1202,7 @@ body {
 /* Img desineje apacioje */
 .S1ContactRightimg {
   position: relative;
-  bottom: -376px;
+  bottom: -346px;
   right: -100px;
   clip-path: inset(0 50% 0 0);
 }
@@ -1217,8 +1216,8 @@ body {
 }
 
 .form-group {
-  margin-bottom: 10px;
-  padding-bottom: 13px;
+  margin-bottom: 3px;
+  padding-bottom: 16px;
   margin-right: 10px;
 }
 
@@ -1231,9 +1230,9 @@ body {
 }
 
 .form-group label::placeholder {
+  margin-top: 24px;
   display: block;
   font-size: 15px;
-  margin-bottom: 5px;
   margin-left: 20px;
   color: #ffffff50;
 }
@@ -1248,7 +1247,7 @@ body {
   background: transparent;
   outline: none;
   resize: none;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   padding-left: 14px;
   opacity: 0.6;
   font-family: "Livvic";
@@ -1606,11 +1605,11 @@ Desktop 1440px.
   /* CONTACT.HTML */
 
   .ContactSection1 {
-    width: 100%;
+    width: 768px;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    height: 1185px;
+    height: 1235px;
   }
 
   .S1Container-left {
@@ -2293,7 +2292,7 @@ Desktop 1440px.
     display: flex;
     flex-direction: column; 
     align-items: center;
-    max-height: 1058px;
+    max-height: 1072px;
   }
 
   .S1Container-left {
@@ -2358,7 +2357,8 @@ Desktop 1440px.
     width: 325px;
   }
 
-  .form-group input, .form-group textarea {
+  .form-group input, 
+  .form-group textarea {
     width: 325px;
     font-size: 14px;
   }

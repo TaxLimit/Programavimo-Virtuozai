@@ -921,6 +921,7 @@ body {
 }
 .About-Page_section2 .grid .plus-btn:hover {
   background-color: #79c8c7;
+  cursor: pointer;
 }
 /* x button*/
 .card6 .x-btn {
@@ -936,6 +937,7 @@ body {
 
 .About-Page_section2 .grid .x-btn:hover {
   background-color: #f67e7e;
+  cursor: pointer;
 }
 .card6 .x-btn svg {
   transform: rotate(45deg);

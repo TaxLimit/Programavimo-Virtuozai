@@ -1142,6 +1142,7 @@ body {
   background-color: #014e56;
   height: 570px;
   position: relative;
+  overflow: hidden;
 }
 
 .ContactS1Container {

@@ -740,7 +740,6 @@ body {
     top: 80px;
     left: 110px;
     margin-top: 0;
-    
   }
   .About-Page .S1H1Sizing {
     text-align: center;
@@ -772,6 +771,7 @@ body {
   .About-Page .flex-container {
     max-height: 252px;
     min-height: 252px;
+    top: 0px;
   }
   .About-Page .S1H1Sizing {
     max-height: 40px;
@@ -788,6 +788,7 @@ body {
     left: 24px;
     top: 60px;
     line-height: 28px;
+    left: 0;
   }
   .About-Page .S1BottomRightDesign {
     left: 275px;

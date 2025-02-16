@@ -80,7 +80,7 @@ body {
   position: relative;
   width: 100%; /* Užpildyti pilną ekrano plotį */
   background: #014e56;
-  max-width: 1440px;
+  width: 1440px;
   height: 250px;
 }
 .logo {
@@ -156,6 +156,10 @@ body {
   align-items: center; /* Vertikalus išcentravimas */
 }
 
+.contact-button:active {
+  opacity: 0.25;
+}
+
 .social-icon:hover {
   fill: #f67e7e;
   cursor: pointer;
@@ -165,15 +169,13 @@ body {
   background-color: #fff; /* Fono spalva rašant */
   color: #002529;
 }
-/* Burger mygtuko stilius */
-.burger-menu {
+
+.sidenav {
   display: none;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+}
+
+.openbtn {
+  display: none;
 }
 
 /* Section 1 */
@@ -277,7 +279,9 @@ body {
   gap: 32px;
 }
 
-.Item1, .Item2, .Item3 {
+.Item1,
+.Item2,
+.Item3 {
   display: inline-flex;
   width: 540px;
   height: 94px;
@@ -519,6 +523,10 @@ body {
   right: 260px;
 }
 
+.button-container:active {
+  opacity: 0.25;
+}
+
 .image-container {
   position: absolute;
   top: 56px;
@@ -535,7 +543,7 @@ body {
 /*footer */
 
 .footer {
-  max-width: 1440px; /* Bendras skilties plotis */
+  width: 1440px; /* Bendras skilties plotis */
   height: 196px; /* Bendras skilties aukštis */
   flex-shrink: 0;
   display: flex;
@@ -655,14 +663,13 @@ body {
 
 /* Section 1 */
 
-.About-Page .flex-container{
+.About-Page .flex-container {
   max-width: 1100px;
   min-width: 1100px;
   max-height: 159px;
   min-height: 159px;
   align-items: center;
-  flex-direction: row
-  
+  flex-direction: row;
 }
 .About-Page .S1H1Sizing {
   margin-left: 0px;
@@ -696,10 +703,11 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
- }
+}
 .About-Page .rectangle {
   background-color: #f67e7e;
 }
+
 @media (max-width: 768px) {
   .About-Page .rectangle {
     display: none;
@@ -707,41 +715,85 @@ body {
   .About-Page .Section1 {
     max-height: 356px;
     min-height: 356px;
-
   }
   .About-Page .flex-container {
     max-width: 683px;
     min-width: 683px;
     min-height: 220px;
     max-height: 220px;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+    top: 24px;
   }
   .About-Page .S1Container {
     width: 457px;
-    height: 140px; 
+    height: 140px;
     margin: 0;
     padding: 0;
   }
-  .About-Page .S1ParagraphSizing{
+  .About-Page .S1ParagraphSizing {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 28px;
     height: 140px;
     width: 457px;
-    top: 78px;
-    left: 153px;
+    top: 80px;
+    left: 110px;
     margin-top: 0;
   }
-  .About-Page .S1H1Sizing{
+  .About-Page .S1H1Sizing {
     text-align: center;
     min-width: 683px;
     max-width: 683px;
     height: 56px;
+    left: 0;
   }
   .About-Page .S1BottomRightDesign {
     left: 668px;
     width: 100%;
     bottom: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .About-Page .flex-container,
+  .About-Page .S1H1Sizing,
+  .About-Page .S1Container,
+  .About-Page .Section1Paragraph {
+    max-width: 327px;
+    min-width: 327px;
+  }
+  .About-Page .Section1 {
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 360px;
+    min-height: 360px;
+  }
+  .About-Page .flex-container {
+    max-height: 252px;
+    min-height: 252px;
+    top: 0px;
+  }
+  .About-Page .S1H1Sizing {
+    max-height: 40px;
+    min-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .About-Page .S1Container,
+  .About-Page .Section1Paragraph {
+    max-height: 196px;
+    min-height: 196px;
+  }
+  .About-Page .Section1Paragraph {
+    left: 24px;
+    top: 60px;
+    line-height: 28px;
+    left: 0;
+  }
+  .About-Page .S1BottomRightDesign {
+    left: 275px;
+    width: 100%;
+    top: 260px;
   }
 }
 
@@ -1034,7 +1086,7 @@ body {
   line-height: 25px;
   width: 302px;
   height: 25px;
-  margin-bottom: 56px;
+  margin-bottom: 84px;
 }
 .About-Page_section2 .grid h3 {
   font-size: 18px;
@@ -1397,7 +1449,7 @@ body {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 45px ;
+  max-height: 45px;
 }
 
 .Our-Clients .decorative-img {
@@ -1413,20 +1465,20 @@ body {
     max-height: 308px;
     min-height: 308px;
   }
-  .Our-Clients-Container{
+  .Our-Clients-Container {
     max-height: 108px;
     max-width: 689px;
     gap: 48px;
   }
 
-  .Our-Clients .section-title-container{
+  .Our-Clients .section-title-container {
     max-width: 457px;
     max-height: 32px;
   }
   .Our-Clients .section-title {
     font-size: 32px;
   }
-  
+
   .Our-Clients .client-logos-container {
     gap: 30px;
     flex-wrap: nowrap;
@@ -1442,8 +1494,8 @@ body {
   }
 }
 
-@media(max-width: 375px){
-  .Our-Clients .section-title-container{
+@media (max-width: 375px) {
+  .Our-Clients .section-title-container {
     max-width: 327px;
     min-width: 327px;
   }
@@ -1453,7 +1505,7 @@ body {
     max-height: 632px;
     min-height: 632px;
   }
-  .Our-Clients-Container{
+  .Our-Clients-Container {
     max-width: 327px;
     min-width: 327px;
     max-height: 456px;
@@ -1481,19 +1533,21 @@ body {
 /* Contact-page */
 .ContactSection1 {
   width: 1440px;
-  max-width: 100%;
   background-color: #014e56;
-  overflow-x: hidden;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
 }
 
 .ContactS1Container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-} 
+}
 
 .S1Container-left {
-  flex: 1;
+  /*flex: 1;*/
+  width: 540px;
 }
 
 .ContactS1H1 {
@@ -1501,6 +1555,7 @@ body {
   font-size: 64px;
   line-height: 100px;
   width: 350px;
+  margin-bottom: 16px;
 }
 
 .S1H3Small {
@@ -1513,19 +1568,21 @@ body {
 }
 
 .S1Container-left ul {
+  margin-top: 32px;
   list-style: none;
   padding-bottom: 80px;
 }
 
 .S1Container-left ul li {
   font-family: "Livvic";
-  margin-top: 30px;
+  margin-top: 8px;
   color: #ffffff;
   font-style: bold;
   display: flex;
   align-items: center;
   font-size: 18px;
   line-height: 28px;
+  width: 445px;
 }
 
 .S1Container-left ul li img {
@@ -1539,18 +1596,14 @@ body {
   position: relative;
   top: 4px;
   left: -112px;
-  width: 225px;
-  height: 225px;
   clip-path: inset(0 0 0 50%);
 }
 
 /* Img desineje apacioje */
 .S1ContactRightimg {
-  position: relative;
-  bottom: -335px;
-  right: -111px;
-  width: 225px;
-  height: 225px;
+  position: absolute;
+  bottom: -4px;
+  right: -100px;
   clip-path: inset(0 50% 0 0);
 }
 /* Formos containeris */
@@ -1559,18 +1612,27 @@ body {
   width: 100%;
   max-width: 540px;
   flex: 1;
-  padding-left: 5%;
+  
 }
 
 .form-group {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
+  /*margin-bottom: 3px;*/
+  padding-bottom: 24px;
+  margin-right: 10px;
+}
+
+.submit-button:hover {
+  border-radius: 24px;
+  background: #79c8c7;
+}
+.form-group:active {
+  opacity: 0.25;
 }
 
 .form-group label::placeholder {
+  margin-top: 24px;
   display: block;
   font-size: 15px;
-  margin-bottom: 5px;
   margin-left: 20px;
   color: #ffffff50;
 }
@@ -1579,16 +1641,18 @@ body {
 .form-group textarea {
   width: 540px;
   font-size: 15px;
+  line-height: 20px;
   border: none;
-  border-bottom: 1px solid #ffffff50;
+  border-bottom: 1px solid #fff;
   color: #ffffff;
   background: transparent;
   outline: none;
   resize: none;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   padding-left: 14px;
+  opacity: 0.6;
+  font-family: "Livvic";
 }
- /* Perkeliau i  892 */ 
 
 .form-group input:hover,
 .form-group textarea:hover {
@@ -1609,10 +1673,21 @@ body {
   border: 2px;
   margin-top: 10px;
 }
-.form-group input:invalid,
-.form-group textarea:invalid {
-  border-bottom: 1px solid #f67e7e;
-  color: #f67e7e;
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #ffffff50;
+  box-shadow: 0 0 0px 1000px #014e56 inset;
+  -webkit-text-fill-color: #fff;
+}
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+  border-bottom: 1px solid #79C8C7;
+  -webkit-text-fill-color: #fff;
 }
 
 .error-message {
@@ -1624,31 +1699,31 @@ body {
   line-height: 12.55px;
 }
 
-.form-group input:invalid:focus {
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid #79C8C7;
+  color: #FFF;
+  font-family: "Livvic";
+}
+
+form.submitted input:invalid,
+form.submitted textarea:invalid {
   border-bottom: 2px solid #f67e7e;
-  opacity: 1;
-  font-family: "Livvic";
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-bottom: 1px solid #79c8c7;
-  opacity: 1;
-  font-family: "Livvic";
-}
-
-.form-group input:invalid {
   opacity: 0.6;
   font-family: "Livvic";
+  color: #F67E7E;
 }
 
-.form-group input {
+form.submitted input:invalid:focus,
+form.submitted textarea:invalid:focus {
+  border-bottom: 2px solid #f67e7e;
   opacity: 0.6;
   font-family: "Livvic";
+  color: #F67E7E;
 }
 
-.form-group input:invalid + .error-message,
-.form-group textarea:invalid + .error-message {
+form.submitted input:invalid ~ .error-message,
+form.submitted textarea:invalid ~ .error-message {
   display: block;
 }
 
@@ -1663,7 +1738,6 @@ Desktop 1440px.
 @media (max-width: 1440px) {
   body {
     width: 100%;
-    overflow-x: hidden;
   }
 }
 /* Tablet  */
@@ -1830,7 +1904,7 @@ Desktop 1440px.
     height: fit-content;
   }
 
-  .flex-container_section-3{
+  .flex-container_section-3 {
     height: fit-content;
     align-items: center;
   }
@@ -1874,15 +1948,10 @@ Desktop 1440px.
   .testimonial-card {
     width: 100%;
     max-width: 573px;
-    
   }
 
   .testimonial-author {
     margin-top: 16px;
-  }
-
-  .quotes-icon {
-    /* left: 44%; */
   }
 
   .testimonial-img {
@@ -1937,17 +2006,16 @@ Desktop 1440px.
   /* CONTACT.HTML */
 
   .ContactSection1 {
-    width: 100%;
-    height: fit-content;
-    display: flex; 
-  }
-
-  .ContactS1Container {
-    flex: 1;
+    width: 768px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 1110px;
   }
 
   .S1Container-left {
-    width: 100%;
+    width: 248px;
+    /*flex: 1;*/
   }
 
   .ContactS1H1 {
@@ -1960,8 +2028,7 @@ Desktop 1440px.
   .S1H3Small {
     font-size: 32px;
     line-height: 48px;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin: 15px;
   }
 
   .S1Container-left ul {
@@ -1979,15 +2046,13 @@ Desktop 1440px.
 
   .S1ContactLeftimg {
     position: relative;
-    width: 225px;
-    height: 225px;
-    clip-path: inset(0 0 0 50%)
+    clip-path: inset(0 0 0 50%);
   }
 
   .S1ContactRightimg {
-    position: relative;
-    width: 200px;
-    height: 225px;
+    position: absolute;
+    bottom: -4px;
+    right: -100px;
     clip-path: inset(0 50% 0 0);
   }
 
@@ -1995,33 +2060,33 @@ Desktop 1440px.
     font-family: "Livvic";
     width: 100%;
     max-width: 540px;
-    margin-left: 70px;
-  }
-  
-  .form-group {
-    margin-bottom: 10px;
-    
+    margin-left: 90px;
   }
 
-  .form-group input, .form-group textarea {
-    width: calc(100% - 52px);
+  .form-group {
+    margin-bottom: 10px;
+    max-width: 540px;
+  }
+
+  .form-group input,
+  .form-group textarea {
     max-width: 520px;
     font-size: 14px;
     margin: 0 auto;
   }
 
   .form-group button {
-    width: 100%;
     max-width: 123px;
     height: 48px;
     margin-right: 390px;
   }
-
+}
+@media screen and (max-width: 768px) {
   /* Footer */
 
   .footer {
     position: relative;
-    max-width: 768;
+    max-width: 768px;
     height: 271px;
     margin-top: auto;
   }
@@ -2061,7 +2126,44 @@ Desktop 1440px.
     right: 0;
   }
   .footer-nav-about {
+  }
 
+  .footer-social-networks {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    height: 24px;
+    width: 102px;
+  }
+
+  /* Section 3 */
+
+  .About-Page .Our-Clients {
+    width: 100%;
+  }
+  .About-Page .client-logos-container {
+    width: 100%;
+  }
+  .footer-contact {
+    width: 689px;
+    height: 100px;
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+    top: 56px;
+    right: 0;
+  }
+  .footer-social-networks {
+    position: absolute;
+    left: 0px;
+    top: 145px;
+  }
+
+  .footer-copyright {
+    top: 145px;
   }
 }
 
@@ -2100,10 +2202,85 @@ Desktop 1440px.
     display: none;
   }
 
-  .burger-menu {
+  /* Menu-Mobile Sidebar */
+
+  .openbtn {
     display: block;
-    top: 41px;
+    cursor: pointer;
+    position: absolute;
+    top: 56px;
     right: 24px;
+  }
+
+  .sidenav {
+    display: block;
+    height: 667px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0px;
+    background-color: #2c6269;
+    overflow-x: hidden;
+    transition: 0.1s;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Livvic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #f67e7e;
+    cursor: pointer;
+  }
+
+  .menu-button {
+    position: relative;
+    top: 112px;
+    margin: 0px 48px 24px 48px;
+  }
+
+  .menu-contactbtn {
+    color: #fff;
+    text-align: center;
+    font-family: "Livvic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 10px 33px;
+  }
+
+  .menu-contactbtn:hover {
+    background-color: #fff;
+    color: #002529;
+  }
+
+  .menu-contactbtn:active {
+    opacity: 0.25;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 56px;
+    right: 25px;
+  }
+
+  .BottomRightDesign {
+    height: 200px;
+    position: absolute;
+    top: 467px;
+    right: -100px;
   }
 
   /* Section 1 */
@@ -2191,7 +2368,7 @@ Desktop 1440px.
   .section2Container {
     width: 100%;
   }
-  
+
   .S2Container {
     width: 327px;
     height: 945px;
@@ -2214,10 +2391,12 @@ Desktop 1440px.
     height: 199px;
     top: 316px;
     left: 24px;
-    gap: 48px; 
+    gap: 48px;
   }
 
-  .Item1, .Item2, .Item3 {
+  .Item1,
+  .Item2,
+  .Item3 {
     width: 327px;
     height: 199px;
     flex-direction: column;
@@ -2225,96 +2404,40 @@ Desktop 1440px.
     text-align: center;
     gap: 16px;
   }
-  
-  .Description{
+
+  .Description {
     width: 327px;
     height: 111px;
     gap: 10px;
   }
 
-  /*  Section 2 */
-  /*
-  .Section2 {
-    width: 100%;
-    min-height: 1073px;
-    margin-top: auto;
-  }
-  .section2Container {
-    width: 100%;
-  }
-  .S2Container {
-    width: 100%;
-    margin: 0;
-  }
-  .ListInRight {
-    width: 100%;
-    flex-direction: column;
-    left: 0;
-    right: 0;
-  }
-  .Item1 {
-    width: 100%;
-  }
-  .Item2 {
-    width: 100%;
-  }
-  .Item3 {
-    width: 100%;
-  }
-  .Description {
-    flex-shrink: 1;
-  }
-  .testimonial-img {
-    margin: 0;
-  }
-  */
+  /* ----------Section 3---------- */
 
-  /* Section 3 */
+  .section-3 {
+    height: fit-content;
+  }
 
-  /* .section-3 {
-    width: 100%;
-    min-height: 1410px;
+  .flex-container_section-3 {
+    height: fit-content;
   }
-  .section-3-heading {
-    width: 100%;
+
+  .heading-container {
+    max-width: 327px;
+    margin-top: 140px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
+
+  .testimonials-box {
+    padding: 48px 24px 116px 24px;
+  }
+
   .testimonial-card {
     width: 100%;
+    max-width: 327px;
   }
- */
+  /* ----------Section 3 end---------- */
 
- /* Section 3 */
-
- .section-3 {
-  height: 1410px;
-}
-
-.flex-container_section-3 {
-  height: 1410px;
-}
-
-.section-3-heading {
-  width: 327px;
-  margin-top: 140px;
-  height: auto;
-}
-
-.testimonials-box {
-}
-
-.testimonial-card {
-  width: 327px;
-}
-
-.quotes-icon {
-  left: 130px
-}
-
-.testimonial-img {
-  margin-left: 133px;
-  margin-right: 134px;
-}
-  
   /* Article */
   .article {
     width: 100%;
@@ -2323,13 +2446,36 @@ Desktop 1440px.
   .mask {
     height: 302px;
   }
-  .content {
-    width: 100%;
-    left: 0%;
+
+  .image-container {
+    top: 180px;
+    right: 568px;
+    width: 200px;
+    height: 244px;
   }
+
+  .content {
+    width: 327px;
+    height: 64px;
+    top: 83px;
+    left: 24px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
   .button-container {
-    width: 100%;
-    left: 0%;
+    width: 153px;
+    height: 48px;
+    top: 171px;
+    left: 111px;
+  }
+
+  .button {
+    text-align: center;
   }
   /* Footer */
   .footer {
@@ -2342,91 +2488,172 @@ Desktop 1440px.
   }
   .footer-contact {
     width: 100%;
-    left: 0;
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
+  .footer {
+    position: relative;
+    max-width: 375;
+    height: 432px;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    position: relative;
+    width: 100%;
+    width: 327px;
+    height: 302px;
+    flex-shrink: 0;
+  }
+
+  .footer-logo {
+    text-align: center;
+    width: 96px;
+    height: 24px;
+    left: 116px;
+    position: absolute;
+  }
+
+  .footer-nav-buttons {
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    top: 48px;
+    left: 98px;
+    width: 107px;
+    height: 25px;
+    font-size: 15px;
+    gap: 24px;
+  }
+
+  .footer-nav-button {
+    position: absolute;
+    font-size: 15px;
+  }
+
+  .footer-nav-about {
+    left: 75px;
+  }
+
+  .footer-nav-home {
+    left: 15px;
+  }
+
+  .footer-contact {
+    width: 327px;
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+    top: 145px;
+    font-family: "Livvic";
+  }
+
+  .footer-social-networks {
+    top: 240px;
+    left: 120px;
+    position: absolute;
+  }
+
+  .footer-copyright {
+    display: inline;
+    text-align: center;
+    left: 45px;
+    top: 282px;
+  }
+}
+
+
+/* Contact us */
+
+@media screen and (max-width: 375px) {
+  .ContactSection1 {
+    width: 375px;
+    height: 1010px;;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .S1Container-left {
+    width: 375px;
+    align-items: center;
+  }
+
+  .ContactS1H1 {
+    font-size: 40px;
+    line-height: 40px;
+    width: 327px;
+    height: 40px;
+    margin-bottom: 12px;
+    text-align: center; 
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .S1H3Small {
+    text-align: center;
+    width: 200px;
+    height: 48px;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 87.5px;
+    margin-right: 87.5px;
+  }
+
+  .S1Container-left ul {
+    padding: 20px;
+    margin: 4px;
+    
+  }
+
+  .S1Container-left ul li {
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+    width: fit-content;
+  }
+
+  .S1ContactLeftimg {
+    display: none;
+  }
+
+  .S1ContactRightimg {
+    position: absolute;
+    bottom: -116.5px;
+    right: -100px;
+    clip-path: inset(0 50% 50% 0);
+  }
+
+  .S1FormContainer {
+    margin-left: 22px;
+    font-family: "Livvic";
+    max-width: 375px;
+  }
   
+  .form-group {
+    margin-bottom: 10px;
+    width: 325px;
+  }
 
-.footer {
-   position: relative; 
-  max-width: 375;
-  height: 432px;
-  margin-top: auto;
+  .form-group input, 
+  .form-group textarea {
+    width: 325px;
+    font-size: 14px;
+  }
+
+  .form-group button {
+    max-width: 123px;
+    height: 48px;
+    padding-bottom: -100px;
+  }
 }
 
- .footer-container {
-  position: relative;
-  width: 100%;
-  width: 327px;
-  height: 302px;
-  flex-shrink: 0;
-
-  
-}
-
-.footer-logo {
-  text-align: center;
-  width: 96px;
-  height: 24px;
-  left: 116px;
-  position: absolute; 
- 
-}
-
-
-.footer-nav-buttons {
-display: flex;
-gap: 24px;
-text-align: center;
-top: 48px;
-left: 98px;
-width: 107px;
-height: 25px;
-font-size: 15px;
-gap: 24px; 
-}
-
-.footer-nav-button{
-position: absolute;
- font-size: 15px;
-}
-
-.footer-nav-about{
-  left: 75px;
-}
-
-.footer-nav-home{
-  left: 15px;
-}
-
-
-.footer-contact {
-width:327px;
-height: 100px;
-text-align: center;
-font-size: 15px;
-font-style: normal;
-font-weight: 600;
-line-height: 25px;
-opacity: 0.6;
-top: 145px;
-font-family: "Livvic";
-}
-
-.footer-social-networks {
-top: 240px;
-left: 120px;
-position: absolute;
-}
-
-.footer-copyright {
-  display: inline;
-  text-align: center;
-  left: 45px;
-}
-}
 
 /* About section2 tablet */
 
@@ -2510,7 +2737,9 @@ position: absolute;
   }
 }
 
-/* About section2 mobile */
+/* 
+
+section2 mobile */
 @media screen and (max-width: 375px) {
   .About-Page_section2 {
     width: 100%;
@@ -2579,3 +2808,4 @@ position: absolute;
     text-align: center;
   }
 }
+
